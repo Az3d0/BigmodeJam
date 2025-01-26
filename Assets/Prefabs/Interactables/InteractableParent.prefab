@@ -97,8 +97,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2590540386024331843}
   - component: {fileID: 3955704512435099035}
+  - component: {fileID: 710331902000327881}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: InteractableCollider
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,6 +156,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &710331902000327881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3792029984892467718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f601e4ab8b5246d489c23422fef6b670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_minigame: {fileID: 538834746903993984, guid: 40bc6a5a29d501f459c71f4530312269, type: 3}
 --- !u!1 &4682828023834220449
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +194,7 @@ Transform:
   m_GameObject: {fileID: 4682828023834220449}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.49, y: 1.8, z: -0.02080913}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

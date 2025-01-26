@@ -4,19 +4,26 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CircleCollider2D))]
-public class PlayerMovement : MonoBehaviour
+public class PlayerControls : MonoBehaviour
 {
     private InputSystem_Actions m_inputs;
     private Rigidbody2D m_rigidbody;
     private Vector3 m_inputDirection;
     private GameObject m_interactableObject;
 
+    public static PlayerControls Instance;
+
     [SerializeField] private float m_speed = 1f;
 
-    private event Action<GameObject> UpdateInteractable;
+    public event Action<GameObject> UpdateInteractable;
 
     private void Awake()
     {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+
         m_inputs = new InputSystem_Actions();
         m_inputs.Enable();
         m_inputs.Player.Move.performed += OnPlayerMoved;
@@ -42,7 +49,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (m_interactableObject != null)
         {
-            Debug.Log("interacting");
+            if(m_interactableObject.TryGetComponent<MinigameOpener>(out MinigameOpener minigameOpener))
+            {
+                minigameOpener.OpenMinigame();
+                DisablePlayerMovement();
+            }
+            else
+            {
+                Debug.Log("interacting");
+            }
         }
     }
 
@@ -51,6 +66,15 @@ public class PlayerMovement : MonoBehaviour
         m_inputDirection = new Vector3 (context.ReadValue<Vector2>().x, context.ReadValue<Vector2>().y, 0);
     }
 
+    public void DisablePlayerMovement()
+    {
+        m_inputs.Player.Disable();
+    }
+
+    public void EnablePlayerMovement()
+    {
+        m_inputs.Player.Enable();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Interactable")
