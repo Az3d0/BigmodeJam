@@ -168,7 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f601e4ab8b5246d489c23422fef6b670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_minigame: {fileID: 538834746903993984, guid: 40bc6a5a29d501f459c71f4530312269, type: 3}
+  m_minigamePrefab: {fileID: 0}
+  minigameLength: 10
 --- !u!1 &4682828023834220449
 GameObject:
   m_ObjectHideFlags: 0
