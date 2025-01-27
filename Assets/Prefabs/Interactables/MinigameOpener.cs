@@ -2,6 +2,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class MinigameOpener : MonoBehaviour
@@ -19,7 +20,7 @@ public class MinigameOpener : MonoBehaviour
         Countdown.Instance.StartCountdown(minigameLength);
         Countdown.Instance.m_currentlyOpenMinigame = this;
 
-        Debug.Log("openingWindow");
+        PlayerControls.Instance.DisablePlayerMovement();
     }
 
     public void CloseMinigame()

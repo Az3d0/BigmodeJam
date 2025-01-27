@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CircleCollider2D))]
@@ -11,6 +13,8 @@ public class PlayerControls : MonoBehaviour
     private Vector3 m_inputDirection;
     private GameObject m_interactableObject;
 
+    public Dictionary<string, InputActionMap> MinigameInputActionMaps;
+
     public static PlayerControls Instance;
 
     [SerializeField] private float m_speed = 1f;
@@ -19,21 +23,33 @@ public class PlayerControls : MonoBehaviour
 
     private void Awake()
     {
-        if(Instance == null)
+        if (Instance == null)
         {
             Instance = this;
         }
 
         m_inputs = new InputSystem_Actions();
         m_inputs.Enable();
+
+
+        m_rigidbody = GetComponent<Rigidbody2D>();
+    }
+
+    private void OnEnable()
+    {
         m_inputs.Player.Move.performed += OnPlayerMoved;
         m_inputs.Player.Move.canceled += OnPlayerMoved;
         m_inputs.Player.Interact.performed += OnPlayerInteract;
-
-        m_rigidbody = GetComponent<Rigidbody2D>();
         UpdateInteractable += OnInteractableUpdated;
     }
 
+    private void OnDisable()
+    {
+        m_inputs.Player.Move.performed -= OnPlayerMoved;
+        m_inputs.Player.Move.canceled -= OnPlayerMoved;
+        m_inputs.Player.Interact.performed -= OnPlayerInteract;
+        UpdateInteractable -= OnInteractableUpdated;
+    }
     private void FixedUpdate()
     {
         m_rigidbody.AddForce(m_inputDirection * m_speed);
@@ -49,10 +65,9 @@ public class PlayerControls : MonoBehaviour
 
         if (m_interactableObject != null)
         {
-            if(m_interactableObject.TryGetComponent<MinigameOpener>(out MinigameOpener minigameOpener))
+            if (m_interactableObject.TryGetComponent<MinigameOpener>(out MinigameOpener minigameOpener))
             {
                 minigameOpener.OpenMinigame();
-                DisablePlayerMovement();
             }
             else
             {
@@ -63,7 +78,7 @@ public class PlayerControls : MonoBehaviour
 
     private void OnPlayerMoved(InputAction.CallbackContext context)
     {
-        m_inputDirection = new Vector3 (context.ReadValue<Vector2>().x, context.ReadValue<Vector2>().y, 0);
+        m_inputDirection = new Vector3(context.ReadValue<Vector2>().x, context.ReadValue<Vector2>().y, 0);
     }
 
     public void DisablePlayerMovement()
@@ -75,9 +90,10 @@ public class PlayerControls : MonoBehaviour
     {
         m_inputs.Player.Enable();
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Interactable")
+        if (collision.gameObject.tag == "Interactable")
         {
             UpdateInteractable.Invoke(collision.gameObject);
         }
@@ -91,3 +107,4 @@ public class PlayerControls : MonoBehaviour
         }
     }
 }
+
