@@ -14,6 +14,7 @@ public class PlayerControls : MonoBehaviour
     public static PlayerControls Instance;
 
     [SerializeField] private float m_speed = 1f;
+    [SerializeField] private float stopForceMultiplier = 10f;
 
     public event Action<GameObject> UpdateInteractable;
 
@@ -36,7 +37,15 @@ public class PlayerControls : MonoBehaviour
 
     private void FixedUpdate()
     {
-        m_rigidbody.AddForce(m_inputDirection * m_speed);
+        if (m_inputDirection != Vector3.zero)
+        {
+            m_rigidbody.AddForce(m_inputDirection * m_speed);
+        }
+        else
+        {
+            m_rigidbody.AddForce(-m_rigidbody.linearVelocity * stopForceMultiplier);
+        }
+
     }
     private void OnInteractableUpdated(GameObject go)
     {
@@ -64,6 +73,11 @@ public class PlayerControls : MonoBehaviour
     private void OnPlayerMoved(InputAction.CallbackContext context)
     {
         m_inputDirection = new Vector3 (context.ReadValue<Vector2>().x, context.ReadValue<Vector2>().y, 0);
+
+        if (context.canceled)
+        {
+            m_inputDirection = Vector3.zero;
+        }
     }
 
     public void DisablePlayerMovement()
