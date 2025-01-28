@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,13 +15,21 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("Level manager created!");
         Debug.Log("Active scene on manager start: " + SceneManager.GetActiveScene().name);
-        
-        if (currentLevelIndex != levelList.levelNames.IndexOf(SceneManager.GetActiveScene().name))
+
+#if UNITY_EDITOR        
+        //if playtesting from  a specific level, manually update level manager variables
+        if (!SceneManager.GetActiveScene().name.Equals("MainMenu"))
         {
             currentScene = SceneManager.GetActiveScene();
             currentLevelName = currentScene.name;
-            currentLevelIndex = levelList.levelNames.IndexOf(currentLevelName);
+            currentLevelIndex = levelList.levels.FindIndex(level => level.name.Equals(currentLevelName));
+
+            if (currentLevelIndex == -1) 
+            {
+                Debug.Log("Current level not found in level list!");
+            }
         }
+#endif
     }
 
     // Update is called once per frame
@@ -34,18 +43,18 @@ public class LevelManager : MonoBehaviour
 
         //LOAD NEXT LEVEL
         //Make sure this isn't already the last level before trying to load next level
-        if (currentLevelIndex >= levelList.levelNames.Count - 1)
+        if (currentLevelIndex >= levelList.levels.Count - 1)
         {
             Debug.Log("Game over! This is the last level");
             return;
         }
 
-        LoadLevel(currentLevelIndex + 1, true);
+        StartCoroutine(LoadLevel(currentLevelIndex + 1, true));
     }
 
-    private void LoadLevel(int index, bool unloadCurrentLevel)
+    private IEnumerator LoadLevel(int index, bool unloadCurrentLevel)
     {
-        //ACTIVATE LOADING SCREEN
+        //ACTIVATE LOADING SCREEN HERE
 
         //UNLOAD CURRENT LEVEL
         if (unloadCurrentLevel) 
@@ -56,22 +65,28 @@ public class LevelManager : MonoBehaviour
 
         //LOAD NEW LEVEL
         currentLevelIndex = index;
-        currentLevelName = levelList.levelNames[currentLevelIndex];
+        currentLevelName = levelList.levels[currentLevelIndex].sceneName;
         currentScene = SceneManager.GetSceneByName(currentLevelName);
         Debug.Log("Loading level: " + currentLevelName);
-        Debug.Log("Active scene before loading: " + SceneManager.GetActiveScene().name);
         SceneManager.LoadSceneAsync(currentLevelName, LoadSceneMode.Additive);
-        if (currentScene.IsValid() && currentScene.isLoaded)
+
+        while (!currentScene.isLoaded)
         {
-            SceneManager.SetActiveScene(currentScene);
-            Debug.Log("Active scene after loading: " + SceneManager.GetActiveScene().name);
-        } 
+            yield return null;
+        }
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+
+        SceneManager.SetActiveScene(currentScene);
+
+        //DEACTIVATE LOADING SCREEN HERE
     }
 
     private void UnloadCurrentLevel()
     {
-        Debug.Log("Unloading level: " + levelList.levelNames[currentLevelIndex]);
-        SceneManager.UnloadSceneAsync(levelList.levelNames[currentLevelIndex]);
+        Debug.Log("Unloading level: " + levelList.levels[currentLevelIndex]);
+        SceneManager.UnloadSceneAsync(levelList.levels[currentLevelIndex].sceneName);
     }
 
     

@@ -36,11 +36,5 @@ public class StartGame : MonoBehaviour
 
         LoadSceneAndSetActive(buildIndexOfFirstLevelScene);
         SceneManager.LoadSceneAsync(buildIndexOfManagersScene, LoadSceneMode.Additive);
-        Debug.Log("Hello1:");
-        //SceneManager.LoadSceneAsync(buildIndexOfFirstLevelScene, LoadSceneMode.Additive);
-        //Debug.Log("Hello2:");
-        //Scene scene = SceneManager.GetSceneByBuildIndex(buildIndexOfFirstLevelScene);
-        //Debug.Log("Hello3:" + scene.name);
-        //SceneManager.SetActiveScene(scene);
     }
 }
