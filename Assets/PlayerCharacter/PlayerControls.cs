@@ -103,7 +103,7 @@ public class PlayerControls : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Interactable")
+        if(collision.gameObject.CompareTag("Interactable"))
         {
             UpdateInteractable.Invoke(collision.gameObject);
         }
