@@ -5,12 +5,12 @@ using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(CircleCollider2D))]
+[RequireComponent(typeof(CapsuleCollider2D))]
 public class PlayerControls : MonoBehaviour
 {
     private InputSystem_Actions m_inputs;
     private Rigidbody2D m_rigidbody;
-    private Vector3 m_inputDirection;
+    private Vector2 m_inputDirection;
     private GameObject m_interactableObject;
 
     public Dictionary<string, InputActionMap> MinigameInputActionMaps;
@@ -18,8 +18,11 @@ public class PlayerControls : MonoBehaviour
     public static PlayerControls Instance;
 
     [SerializeField] private float m_speed = 1f;
+    [SerializeField] private float stopForceMultiplier = 10f;
 
     public event Action<GameObject> UpdateInteractable;
+
+    private Animator animator;
 
     private void Awake()
     {
@@ -41,6 +44,8 @@ public class PlayerControls : MonoBehaviour
         m_inputs.Player.Move.canceled += OnPlayerMoved;
         m_inputs.Player.Interact.performed += OnPlayerInteract;
         UpdateInteractable += OnInteractableUpdated;
+
+        animator = GetComponent<Animator>();
     }
 
     private void OnDisable()
@@ -52,7 +57,17 @@ public class PlayerControls : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        m_rigidbody.AddForce(m_inputDirection * m_speed);
+        if (m_inputDirection != Vector2.zero)
+        {
+            m_rigidbody.AddForce(m_inputDirection * m_speed);
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            m_rigidbody.AddForce(-m_rigidbody.linearVelocity * stopForceMultiplier);
+            animator.SetBool("isWalking", false);
+        }
+
     }
     private void OnInteractableUpdated(GameObject go)
     {
@@ -78,7 +93,18 @@ public class PlayerControls : MonoBehaviour
 
     private void OnPlayerMoved(InputAction.CallbackContext context)
     {
-        m_inputDirection = new Vector3(context.ReadValue<Vector2>().x, context.ReadValue<Vector2>().y, 0);
+        m_inputDirection = context.ReadValue<Vector2>();
+
+        if (m_inputDirection != Vector2.zero)
+        {
+            animator.SetFloat("x_input", m_inputDirection.x);
+            animator.SetFloat("y_input", m_inputDirection.y);
+        }
+
+        if (context.canceled)
+        {
+            m_inputDirection = Vector2.zero;
+        }
     }
 
     public void DisablePlayerMovement()
@@ -93,7 +119,7 @@ public class PlayerControls : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Interactable")
+        if(collision.gameObject.CompareTag("Interactable"))
         {
             UpdateInteractable.Invoke(collision.gameObject);
         }
@@ -105,6 +131,16 @@ public class PlayerControls : MonoBehaviour
         {
             UpdateInteractable.Invoke(null);
         }
+    }
+
+    //Fixes missing reference exception with animator when reloading level
+    //Could potentially move player object into Managers scene instead and disable/enable when loading new levels with specified spawn points
+    private void OnDestroy()
+    {
+        m_inputs.Player.Move.performed -= OnPlayerMoved;
+        m_inputs.Player.Move.canceled -= OnPlayerMoved;
+        m_inputs.Player.Interact.performed -= OnPlayerInteract;
+        UpdateInteractable -= OnInteractableUpdated;
     }
 }
 
