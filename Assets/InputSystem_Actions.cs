@@ -1018,24 +1018,44 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             ""id"": ""0ee17f53-47e3-443d-a763-eb29943ce039"",
             ""actions"": [
                 {
-                    ""name"": ""Jump"",
+                    ""name"": ""Select"",
                     ""type"": ""Button"",
                     ""id"": ""83ed3895-c9d4-4f13-8451-dec3dc125a5a"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Drag"",
+                    ""type"": ""Value"",
+                    ""id"": ""4bcdb0e8-17e5-4469-b0be-87992c0eae66"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""85c91ea4-87d7-4417-87f7-c953ca781478"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Jump"",
+                    ""action"": ""Select"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eba5b6e8-6acd-4c22-8978-581540ffa911"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Drag"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1130,7 +1150,8 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
         // Minigame1
         m_Minigame1 = asset.FindActionMap("Minigame1", throwIfNotFound: true);
-        m_Minigame1_Jump = m_Minigame1.FindAction("Jump", throwIfNotFound: true);
+        m_Minigame1_Select = m_Minigame1.FindAction("Select", throwIfNotFound: true);
+        m_Minigame1_Drag = m_Minigame1.FindAction("Drag", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -1427,12 +1448,14 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     // Minigame1
     private readonly InputActionMap m_Minigame1;
     private List<IMinigame1Actions> m_Minigame1ActionsCallbackInterfaces = new List<IMinigame1Actions>();
-    private readonly InputAction m_Minigame1_Jump;
+    private readonly InputAction m_Minigame1_Select;
+    private readonly InputAction m_Minigame1_Drag;
     public struct Minigame1Actions
     {
         private @InputSystem_Actions m_Wrapper;
         public Minigame1Actions(@InputSystem_Actions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Jump => m_Wrapper.m_Minigame1_Jump;
+        public InputAction @Select => m_Wrapper.m_Minigame1_Select;
+        public InputAction @Drag => m_Wrapper.m_Minigame1_Drag;
         public InputActionMap Get() { return m_Wrapper.m_Minigame1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1442,16 +1465,22 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_Minigame1ActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_Minigame1ActionsCallbackInterfaces.Add(instance);
-            @Jump.started += instance.OnJump;
-            @Jump.performed += instance.OnJump;
-            @Jump.canceled += instance.OnJump;
+            @Select.started += instance.OnSelect;
+            @Select.performed += instance.OnSelect;
+            @Select.canceled += instance.OnSelect;
+            @Drag.started += instance.OnDrag;
+            @Drag.performed += instance.OnDrag;
+            @Drag.canceled += instance.OnDrag;
         }
 
         private void UnregisterCallbacks(IMinigame1Actions instance)
         {
-            @Jump.started -= instance.OnJump;
-            @Jump.performed -= instance.OnJump;
-            @Jump.canceled -= instance.OnJump;
+            @Select.started -= instance.OnSelect;
+            @Select.performed -= instance.OnSelect;
+            @Select.canceled -= instance.OnSelect;
+            @Drag.started -= instance.OnDrag;
+            @Drag.performed -= instance.OnDrag;
+            @Drag.canceled -= instance.OnDrag;
         }
 
         public void RemoveCallbacks(IMinigame1Actions instance)
@@ -1541,6 +1570,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     }
     public interface IMinigame1Actions
     {
-        void OnJump(InputAction.CallbackContext context);
+        void OnSelect(InputAction.CallbackContext context);
+        void OnDrag(InputAction.CallbackContext context);
     }
 }

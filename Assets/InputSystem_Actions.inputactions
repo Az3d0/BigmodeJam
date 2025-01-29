@@ -996,24 +996,44 @@
             "id": "0ee17f53-47e3-443d-a763-eb29943ce039",
             "actions": [
                 {
-                    "name": "Jump",
+                    "name": "Select",
                     "type": "Button",
                     "id": "83ed3895-c9d4-4f13-8451-dec3dc125a5a",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Drag",
+                    "type": "Value",
+                    "id": "4bcdb0e8-17e5-4469-b0be-87992c0eae66",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "85c91ea4-87d7-4417-87f7-c953ca781478",
-                    "path": "<Keyboard>/space",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Jump",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eba5b6e8-6acd-4c22-8978-581540ffa911",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drag",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
