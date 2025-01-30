@@ -17,8 +17,6 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Level manager created!");
-        Debug.Log("Active scene on manager start: " + SceneManager.GetActiveScene().name);
         currentLevel = levelList.levels[currentLevelIndex];
 
 #if UNITY_EDITOR        

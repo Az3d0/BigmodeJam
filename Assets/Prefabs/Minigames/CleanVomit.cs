@@ -44,7 +44,7 @@ public class CleanVomit : Minigame
 
     protected override void OnDestroy()
     {
-        win = true;
+        win = true; //HARDCODED FOR TESTING
         TriggerGameEnd();
         m_inputs.Minigame1.Select.started -= RaycastFromMouse;
         m_inputs.Minigame1.Select.canceled -= ResetDragableObject;

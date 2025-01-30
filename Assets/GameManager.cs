@@ -55,13 +55,14 @@ public class GameManager : MonoBehaviour
         if (currentXp >= xpRequiredToGoNextLevel)
         {
             //Trigger some kind of promotion transition/cutscene here
+            Debug.Log("You received a PROMOTION!! Go to next level");
             levelManager.LoadNextLevel();
         }
     }
 
     private void ResetVariables(Level currentLevel)
     {
-        Debug.Log(currentLevel.sceneName + " loaded, new threshold = " + currentLevel.xpThreshold);
+        //Debug.Log(currentLevel.sceneName + " loaded, new threshold = " + currentLevel.xpThreshold);
         currentXp = 0;
         xpRequiredToGoNextLevel = currentLevel.xpThreshold;
     }
