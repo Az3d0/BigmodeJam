@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using System;
 
 public class MinigameOpener : MonoBehaviour
 {
@@ -15,8 +16,11 @@ public class MinigameOpener : MonoBehaviour
     public AudioSource mainMusic;
 
     private GameObject m_minigame;
+
+    public static event Action<bool> OnMinigameEnd;
     public void OpenMinigame()
     {
+        //Stop main music and play minigame music
         if (mainMusic != null) 
         { 
             mainMusic.Stop();
@@ -43,6 +47,8 @@ public class MinigameOpener : MonoBehaviour
     {
         Destroy(m_minigame);
         PlayerControls.Instance.EnablePlayerMovement();
+
+        //Resume main music
         if (minigameMusic != null)
         {
             minigameMusic.Stop();
