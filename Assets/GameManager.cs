@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         //if playtesting from  a specific level, manually update game manager variables
         if (!SceneManager.GetActiveScene().name.Equals("MainMenu"))
         {
-            Debug.Log("Playing from specific level!");
+            Debug.Log("GameManager: Playing from specific level!");
             ResetVariables(levelManager.levelList.levels.Find(level => level.sceneName == SceneManager.GetActiveScene().name));
         }
 #endif

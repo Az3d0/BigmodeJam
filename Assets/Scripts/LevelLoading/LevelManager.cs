@@ -9,11 +9,12 @@ public class LevelManager : MonoBehaviour
     [SerializeField] public LevelList levelList;
     [SerializeField] public int currentLevelIndex = 0;
     [SerializeField] public string currentLevelName = "Level1";
-    public Level currentLevel;
+    public static Level currentLevel;
 
     Scene currentScene;
 
     public static event Action<Level> OnLevelLoaded;
+    public static event Func<IEnumerator> BeforeLevelUnloaded;
 
     void Start()
     {
@@ -23,7 +24,7 @@ public class LevelManager : MonoBehaviour
         //if playtesting from  a specific level, manually update level manager variables
         if (!SceneManager.GetActiveScene().name.Equals("MainMenu"))
         {
-            Debug.Log("Playing from specific level!");
+            Debug.Log("LevelManager: Playing from specific level!");
             currentScene = SceneManager.GetActiveScene();
             currentLevelName = currentScene.name;
             currentLevelIndex = levelList.levels.FindIndex(level => level.name.Equals(currentLevelName));
@@ -52,8 +53,21 @@ public class LevelManager : MonoBehaviour
             Debug.Log("Game over! This is the last level");
             return;
         }
+        BeforeLevelUnloaded?.Invoke();
+        StartCoroutine(HandleLevelTransition(currentLevelIndex + 1, true));
+    }
 
-        StartCoroutine(LoadLevel(currentLevelIndex + 1, true));
+    private IEnumerator HandleLevelTransition(int nextLevelIndex, bool unloadCurrentLevel)
+    {
+        if (BeforeLevelUnloaded != null)
+        {
+            foreach (Func<IEnumerator> subscriber in BeforeLevelUnloaded.GetInvocationList())
+            {
+                yield return StartCoroutine(subscriber());
+            }
+        }
+
+        yield return StartCoroutine(LoadLevel(nextLevelIndex, unloadCurrentLevel));
     }
 
     private IEnumerator LoadLevel(int index, bool unloadCurrentLevel)
@@ -77,15 +91,16 @@ public class LevelManager : MonoBehaviour
         {
             yield return null;
         }
+        //DEACTIVATE LOADING SCREEN HERE
         OnLevelLoaded?.Invoke(currentLevel);
         currentScene = SceneManager.GetSceneByName(currentLevelName);
         SceneManager.SetActiveScene(currentScene);
 
-        //DEACTIVATE LOADING SCREEN HERE
     }
 
     private void UnloadCurrentLevel()
     {
+        
         Debug.Log("Unloading level: " + levelList.levels[currentLevelIndex]);
         SceneManager.UnloadSceneAsync(levelList.levels[currentLevelIndex].sceneName);
     }
