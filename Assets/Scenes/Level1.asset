@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Level1
   xpThreshold: 10
+  playerSprite: {fileID: -193897809235608604, guid: 0c85f670e757011489dc948358f5aeba, type: 3}

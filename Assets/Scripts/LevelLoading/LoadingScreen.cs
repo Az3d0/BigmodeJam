@@ -2,10 +2,12 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class LoadingScreen : MonoBehaviour
 {
     public Image screenFade;
+    public Image playerSprite;
     public float fadeDuration = 1f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -53,8 +55,11 @@ public class LoadingScreen : MonoBehaviour
 
     private void FadeOutBlack(Level currentLevel)
     {
-        
-        StartCoroutine(Deactivate());
+        playerSprite.sprite = currentLevel.playerSprite;
+        playerSprite.transform.DOScale(2, 1)
+            .SetLoops(2, LoopType.Yoyo)
+            .SetEase(Ease.InOutSine)
+            .OnComplete(() => StartCoroutine(Deactivate())); 
     }
     private IEnumerator Activate()
     {
