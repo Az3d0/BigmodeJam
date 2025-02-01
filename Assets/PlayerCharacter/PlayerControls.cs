@@ -24,6 +24,9 @@ public class PlayerControls : MonoBehaviour
 
     private Animator animator;
 
+    private GameObject pauseMenu;
+    private bool isPaused = false;
+
     private void Awake()
     {
         if (Instance == null)
@@ -43,6 +46,7 @@ public class PlayerControls : MonoBehaviour
         m_inputs.Player.Move.performed += OnPlayerMoved;
         m_inputs.Player.Move.canceled += OnPlayerMoved;
         m_inputs.Player.Interact.performed += OnPlayerInteract;
+        m_inputs.Player.PauseMenu.performed += OnPauseMenu;
         UpdateInteractable += OnInteractableUpdated;
 
         animator = GetComponent<Animator>();
@@ -53,6 +57,7 @@ public class PlayerControls : MonoBehaviour
         m_inputs.Player.Move.performed -= OnPlayerMoved;
         m_inputs.Player.Move.canceled -= OnPlayerMoved;
         m_inputs.Player.Interact.performed -= OnPlayerInteract;
+        m_inputs.Player.PauseMenu.performed -= OnPauseMenu;
         UpdateInteractable -= OnInteractableUpdated;
     }
     private void FixedUpdate()
@@ -69,6 +74,39 @@ public class PlayerControls : MonoBehaviour
         }
 
     }
+
+    private void OnPauseMenu(InputAction.CallbackContext context)
+    {
+        if (pauseMenu == null)
+        {
+            pauseMenu = GameObject.Find("Settings");
+        }
+        if (pauseMenu != null) 
+        {
+            if (!isPaused)
+            {
+                OpenPauseMenu();
+            } else
+            {
+                ClosePauseMenu();
+            }
+        } 
+    }
+
+    private void OpenPauseMenu()
+    {
+        DisablePlayerMovement();
+        pauseMenu.GetComponents<Tween_Scale>()[1].TriggerScale();
+        isPaused = true;
+    }    
+    
+    private void ClosePauseMenu()
+    {
+        DisablePlayerMovement();
+        pauseMenu.GetComponents<Tween_Scale>()[0].TriggerScale();
+        isPaused = false;
+    }
+
     private void OnInteractableUpdated(GameObject go)
     {
         m_interactableObject = go;
@@ -109,12 +147,14 @@ public class PlayerControls : MonoBehaviour
 
     public void DisablePlayerMovement()
     {
-        m_inputs.Player.Disable();
+        m_inputs.Player.Move.Disable();
+        m_inputs.Player.Interact.Disable();
     }
 
     public void EnablePlayerMovement()
     {
-        m_inputs.Player.Enable();
+        m_inputs.Player.Move.Enable();
+        m_inputs.Player.Interact.Enable();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

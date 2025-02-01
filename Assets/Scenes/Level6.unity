@@ -197,11 +197,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &560740134 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4741482471465208304, guid: 75dc84dde5a1b8444b20d84346d96909, type: 3}
-  m_PrefabInstance: {fileID: 8407618735512320857}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,85 +281,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1875150576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &954437548
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1114888300}
-    m_Modifications:
-    - target: {fileID: 279565861565518089, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_Name
-      value: minigame_trigger_2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6029075867649423341, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: mainMusic
-      value: 
-      objectReference: {fileID: 560740134}
-    - target: {fileID: 6029075867649423341, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: minigameMusic
-      value: 
-      objectReference: {fileID: 1092667138}
-    - target: {fileID: 6029075867649423341, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: minigameLength
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
---- !u!4 &954437549 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-  m_PrefabInstance: {fileID: 954437548}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1092667138 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7695061393329675266, guid: 75dc84dde5a1b8444b20d84346d96909, type: 3}
-  m_PrefabInstance: {fileID: 8407618735512320857}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1114888299
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,16 +309,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2101189136}
-  - {fileID: 954437549}
+  m_Children: []
   m_Father: {fileID: 1875150576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1607168114 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1533384027474977185, guid: 75dc84dde5a1b8444b20d84346d96909, type: 3}
-  m_PrefabInstance: {fileID: 8407618735512320857}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1643878225
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,80 +660,6 @@ Transform:
   - {fileID: 1643878226}
   m_Father: {fileID: 1875150576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2101189135
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1114888300}
-    m_Modifications:
-    - target: {fileID: 279565861565518089, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_Name
-      value: minigame_trigger_1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6029075867649423341, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: mainMusic
-      value: 
-      objectReference: {fileID: 560740134}
-    - target: {fileID: 6029075867649423341, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: minigameMusic
-      value: 
-      objectReference: {fileID: 1607168114}
-    - target: {fileID: 6029075867649423341, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-      propertyPath: minigameLength
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
---- !u!4 &2101189136 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1391041416503607727, guid: a9a8ba53dfff3d54d8fe228edcf3fbf8, type: 3}
-  m_PrefabInstance: {fileID: 2101189135}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &849958905102080873
 PrefabInstance:
   m_ObjectHideFlags: 0
