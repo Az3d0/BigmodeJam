@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 public class LifetimeCountdown : Countdown
 {
     [SerializeField] private FlashingLight m_flashingLight;
+
     public override void Awake()
     {
         base.Awake();
@@ -34,8 +36,8 @@ public class LifetimeCountdown : Countdown
         }
         base.FixedUpdate();
     }
-    public override void OnTimesUp()
+    public override void TimesUp()
     {
-        base.OnTimesUp();
+        base.TimesUp();
     }
 }

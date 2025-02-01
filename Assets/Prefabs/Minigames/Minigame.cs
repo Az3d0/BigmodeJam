@@ -3,12 +3,18 @@ using UnityEngine;
 
 public abstract class Minigame : MonoBehaviour
 {
-    public static event Action<bool> OnGameEnded;
-
+    public event Action<bool> OnGameEnded;
+    [SerializeField] private MinigameCountdown m_minigameCountdown;
+    [HideInInspector] public float MinigameLenth;
 
     //update this in child classes depending on specific win requirements
-    public bool win;
+    public bool win = false;
 
+    private void Start()
+    {
+        m_minigameCountdown.StartCountdown(MinigameLenth);
+        m_minigameCountdown.OnTimesUp += TriggerGameEnd;
+    }
     protected void TriggerGameEnd()
     {
         Debug.Log($"{gameObject.name} - Minigame won? {win}");
@@ -18,7 +24,7 @@ public abstract class Minigame : MonoBehaviour
 
     protected virtual void OnDestroy()
     {
-        TriggerGameEnd();
+        m_minigameCountdown.OnTimesUp -= TriggerGameEnd;
     }
 
 }

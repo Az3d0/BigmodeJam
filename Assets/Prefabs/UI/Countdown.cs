@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics;
 using TMPro;
 using Unity.IO.LowLevel.Unsafe;
@@ -13,6 +14,7 @@ public class Countdown : MonoBehaviour
     protected Stopwatch m_stopwatch;
     protected float m_timerLengthinMilSec;
 
+    public event Action OnTimesUp;
     public virtual void Awake()
     {
         m_stopwatch = new Stopwatch();
@@ -20,7 +22,6 @@ public class Countdown : MonoBehaviour
     }
     public void StartCountdown(float timerLengthInSec)
     {
-        UnityEngine.Debug.Log("start");
         m_countdownBackgroundUI.SetActive(true);
         m_countdownFillUI.SetActive(true);
         m_countdownTextUI.SetActive(true);
@@ -49,12 +50,13 @@ public class Countdown : MonoBehaviour
 
         if (m_stopwatch.ElapsedMilliseconds >= m_timerLengthinMilSec)
         {
-            OnTimesUp();
+            TimesUp();
         }
     }
 
-    public virtual void OnTimesUp()
+    public virtual void TimesUp()
     {
+        OnTimesUp?.Invoke();
         StopCountdown();
     }
 }

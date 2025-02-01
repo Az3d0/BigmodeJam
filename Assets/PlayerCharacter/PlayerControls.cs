@@ -72,7 +72,6 @@ public class PlayerControls : MonoBehaviour
     private void OnInteractableUpdated(GameObject go)
     {
         m_interactableObject = go;
-        Debug.Log(m_interactableObject);
     }
 
     private void OnPlayerInteract(InputAction.CallbackContext context)
