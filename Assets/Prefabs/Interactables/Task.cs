@@ -8,38 +8,55 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System;
 
-public class MinigameOpener : MonoBehaviour
+public class Task : MonoBehaviour
 {
+    //Task Fields
+    [Header("Task")] 
+    [SerializeField] private LifetimeCountdown m_LifetimeCountdown;
+    [SerializeField] private float m_lifetimeLength;
+
+    //Minigame Fields
+    [Header("Minigame")]
     [SerializeField] private GameObject m_minigamePrefab;
-    [SerializeField] private float minigameLength = 10;
+    public float MinigameLength = 5;
     public AudioSource minigameMusic;
-    public AudioSource mainMusic;
-
+    [SerializeField] private GameObject m_minigameCountdown;
     private GameObject m_minigame;
-
     public static event Action<bool> OnMinigameEnd;
+
+    private void Start()
+    {
+        m_LifetimeCountdown.StartCountdown(m_lifetimeLength);
+    }
     public void OpenMinigame()
     {
         //Stop main music and play minigame music
-        if (mainMusic != null) 
-        { 
-            mainMusic.Stop();
-        } else
+        if (MainMusic.Instance.AudioSourceComponent != null) 
+        {
+            MainMusic.Instance.AudioSourceComponent.Stop();
+        }
+        else
         {
             Debug.Log("Main music audio source not assigned to Minigame Opener!");
         }
         if (minigameMusic != null)
         {
-            Debug.Log("Minigame music audio source not assigned to Minigame Opener!");
             minigameMusic.Play();
         }
 
         m_minigame = Instantiate(m_minigamePrefab);
         m_minigame.SetActive(true);
 
-        Countdown.Instance.StartCountdown(minigameLength);
-        Countdown.Instance.m_currentlyOpenMinigame = this;
-
+        if (m_minigameCountdown.TryGetComponent(out MinigameCountdown minigameCountdownScript))
+        {
+            minigameCountdownScript.StartCountdown(MinigameLength);
+            minigameCountdownScript.CurrentTask = this;
+        }
+        else
+        {
+            Debug.Log("no minigamecountdown found");
+        }
+        
         PlayerControls.Instance.DisablePlayerMovement();
     }
 
@@ -53,9 +70,9 @@ public class MinigameOpener : MonoBehaviour
         {
             minigameMusic.Stop();
         }
-        if (mainMusic != null)
+        if (MainMusic.Instance.AudioSourceComponent != null)
         {
-            mainMusic.Play();
+            MainMusic.Instance.AudioSourceComponent.Play();
         }
     }
 }

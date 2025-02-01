@@ -5,6 +5,7 @@ public abstract class Minigame : MonoBehaviour
 {
     public static event Action<bool> OnGameEnded;
 
+
     //update this in child classes depending on specific win requirements
     public bool win;
 

@@ -1,31 +1,20 @@
 using System.Diagnostics;
 using TMPro;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class Countdown : MonoBehaviour
 {
-    public static Countdown Instance;
 
-    [HideInInspector] public MinigameOpener m_currentlyOpenMinigame;
-
-    [SerializeField] private GameObject m_countdownBackgroundUI;
-    [SerializeField] private GameObject m_countdownFillUI;
-    [SerializeField] private GameObject m_countdownTextUI;
+    [SerializeField] protected GameObject m_countdownBackgroundUI;
+    [SerializeField] protected GameObject m_countdownFillUI;
+    [SerializeField] protected GameObject m_countdownTextUI;
 
     private Stopwatch m_stopwatch;
     private float m_timerLengthinMilSec;
 
-    private void Awake()
+    public virtual void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-
-        m_countdownBackgroundUI.SetActive(false);
-        m_countdownFillUI.SetActive(false);
-        m_countdownTextUI.SetActive(false);
-
         m_stopwatch = new Stopwatch();
         m_stopwatch.Stop();
     }
@@ -42,7 +31,7 @@ public class Countdown : MonoBehaviour
         m_stopwatch.Start();
     }
 
-    private void StopCountdown()
+    public void StopCountdown()
     {
         m_countdownBackgroundUI.SetActive(false);
         m_countdownFillUI.SetActive(false);
@@ -60,8 +49,12 @@ public class Countdown : MonoBehaviour
 
         if (m_stopwatch.ElapsedMilliseconds >= m_timerLengthinMilSec)
         {
-            StopCountdown();
-            m_currentlyOpenMinigame.CloseMinigame();
+            OnTimesUp();
         }
+    }
+
+    public virtual void OnTimesUp()
+    {
+        StopCountdown();
     }
 }
