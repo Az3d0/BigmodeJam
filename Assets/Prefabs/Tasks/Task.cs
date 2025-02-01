@@ -37,6 +37,7 @@ public class Task : MonoBehaviour
         m_lifeTimeCounterOver = true;
         if (m_minigame == null)
         {
+            GameManager.Instance.UpdateXp(false);
             Debug.Log("Lost");
             Destroy(gameObject);
 
@@ -76,6 +77,7 @@ public class Task : MonoBehaviour
 
         if (isWon)
         {
+            GameManager.Instance.UpdateXp(true);
             Debug.Log("won");
             Destroy(gameObject);
         }
@@ -83,6 +85,7 @@ public class Task : MonoBehaviour
         {
             if(m_lifeTimeCounterOver)
             {
+                GameManager.Instance.UpdateXp(false);
                 Debug.Log("Lost");
                 Destroy(gameObject);
             }

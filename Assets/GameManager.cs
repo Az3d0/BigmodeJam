@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
     public LevelManager levelManager;
     public int winXpAmount = 5;
     public int lossXpAmount = 2;
@@ -11,9 +13,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int currentXp;
 
-    private void OnEnable()
+    public int XPRequiredToGoNextLevel => xpRequiredToGoNextLevel;
+
+    public event Action<int> OnXPUpdated;
+    private void Awake()
     {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+        }
     }
 
     void Start()
@@ -37,7 +45,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void UpdateXp(bool win)
+    public void UpdateXp(bool win)
     {
         if (win)
         {
@@ -45,8 +53,9 @@ public class GameManager : MonoBehaviour
 
         } else
         {
-            currentXp += lossXpAmount;
+            currentXp -= lossXpAmount;
         }
+        OnXPUpdated?.Invoke(currentXp);
         CheckIfEnoughXp();
     }
 
