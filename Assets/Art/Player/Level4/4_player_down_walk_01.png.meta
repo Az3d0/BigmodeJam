@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ea506d566c1919847a48c705352017e5
+guid: dc228520f411cff449c4f4f2dad441d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5443238881539719735
-    second: 3_player_down_walk_02_0
+      213: -4518746212534750180
+    second: 4_player_down_walk_01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3_player_down_walk_02_0
+      name: 4_player_down_walk_01_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73205c95ce44a8b40800000000000000
-      internalID: 5443238881539719735
+      spriteID: c1479b3d2403a41c0800000000000000
+      internalID: -4518746212534750180
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 757fe9991d16fbc4594c1e78e8d68116
+    spriteID: 1b53b2e9d34676d4aa1da083a5da9800
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      3_player_down_walk_02_0: 5443238881539719735
+      4_player_down_walk_01_0: -4518746212534750180
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

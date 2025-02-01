@@ -170,10 +170,18 @@ PrefabInstance:
       propertyPath: m_speed
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 4413192109052737144, guid: 6383644b4ca6bed4cb1fe7b6a962be5b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5443238881539719735, guid: ea506d566c1919847a48c705352017e5, type: 3}
     - target: {fileID: 4701747831269485731, guid: 6383644b4ca6bed4cb1fe7b6a962be5b, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7503308592235149027, guid: 6383644b4ca6bed4cb1fe7b6a962be5b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1561f79efe704bc47a1119557fc83800, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
