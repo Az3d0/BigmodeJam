@@ -64,7 +64,8 @@ public class LoadingScreen : MonoBehaviour
         }
         if (playerControls != null)
         {
-            playerControls.DisablePlayerMovement(true);
+            Debug.Log("fade transition starting!");
+            playerControls.DisablePlayerMovement(true, false);
         }
         yield return screenFade.DOFade(1, fadeDuration).WaitForCompletion();
     }    
@@ -78,7 +79,7 @@ public class LoadingScreen : MonoBehaviour
             //playerControls = (pc != null) ? pc.GetComponent<PlayerControls>() : null;
             playerControls = PlayerControls.Instance;
         }
-        yield return screenFade.DOFade(0, fadeDuration).OnComplete(()=> {
+        yield return screenFade.DOFade(0, fadeDuration).OnComplete(() => {
             if (playerControls != null)
             {
                 playerControls.EnablePlayerMovement(true);

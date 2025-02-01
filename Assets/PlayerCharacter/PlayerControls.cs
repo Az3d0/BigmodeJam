@@ -45,7 +45,7 @@ public class PlayerControls : MonoBehaviour
     }
     private void Start()
     {
-        DisablePlayerMovement(true);
+        DisablePlayerMovement(true, false);
     }
 
     private void OnEnable()
@@ -106,7 +106,7 @@ public class PlayerControls : MonoBehaviour
 
     public void OpenPauseMenu()
     {
-        DisablePlayerMovement(false);
+        DisablePlayerMovement(false, false);
         pauseMenu.GetComponent<PauseMenu>().pauseBackground.SetActive(true);
         pauseMenu.GetComponents<Tween_Scale>()[1].TriggerScale();
         isPaused = true;
@@ -157,11 +157,18 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    public void DisablePlayerMovement(bool isTransition)
+    public void DisablePlayerMovement(bool isTransition, bool openingMinigame)
     {
-        OnPause?.Invoke();
+        //Don't pause timers if opening minigame
+        if (!openingMinigame)
+        {
+            //pause timers
+            OnPause?.Invoke();
+        }
         m_inputs.Player.Move.Disable();
         m_inputs.Player.Interact.Disable();
+        
+        //Stop player from opening pause menu during transition
         if (isTransition)
         {
             m_inputs.Player.PauseMenu.Disable();

@@ -66,7 +66,7 @@ public class Task : MonoBehaviour
             m_minigameScript.MinigameLenth = MinigameLength;
             m_minigameScript.OnGameEnded += MinigameEnded;
         }
-        PlayerControls.Instance.DisablePlayerMovement();
+        PlayerControls.Instance.DisablePlayerMovement(false, true);
         
     }
 

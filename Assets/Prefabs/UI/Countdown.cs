@@ -45,12 +45,17 @@ public class Countdown : MonoBehaviour
 
     public void PauseCountdown()
     {
+        //UnityEngine.Debug.Log("pausing countdown for: " + gameObject.name);
+        //UnityEngine.Debug.Log("current elapsed: " + m_stopwatch.Elapsed.ToString());
         m_stopwatch.Stop();
+        //UnityEngine.Debug.Log("Is stopwatch running after pause: "+m_stopwatch.IsRunning);
     }
 
     public void ResumeCountdown()
     {
         m_stopwatch.Start();
+        //UnityEngine.Debug.Log("resuming countdown for: " + gameObject.name);
+        //UnityEngine.Debug.Log("current elapsed: " + m_stopwatch.Elapsed.ToString());
     }
 
     public void StopCountdown()
@@ -64,7 +69,7 @@ public class Countdown : MonoBehaviour
     public virtual void FixedUpdate()
     {
         if (!m_stopwatch.IsRunning) return;
-
+        UnityEngine.Debug.Log(gameObject.name + ": " + m_stopwatch.Elapsed.ToString());
         m_countdownFillUI.transform.localScale = new Vector3(1f  - m_stopwatch.ElapsedMilliseconds / (1000f * m_timerLengthinMilSec / 1000f) , 1, 1);
 
         m_countdownTextUI.GetComponent<TextMeshProUGUI>().text = (m_timerLengthinMilSec/1000 - m_stopwatch.ElapsedMilliseconds / 1000).ToString();
