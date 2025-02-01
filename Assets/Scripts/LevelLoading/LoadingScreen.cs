@@ -73,7 +73,6 @@ public class LoadingScreen : MonoBehaviour
         {
             timer += Time.deltaTime;  // Increase time as the game progresses
             float alpha = Mathf.Lerp(0, 1, timer / fadeDuration);  // Lerp between current alpha and 0
-            Debug.Log("fading to black ALPHA: " + alpha);
             Color newColor = new Color(screenFade.color.r, screenFade.color.g, screenFade.color.b, alpha);  // Set new color with modified alpha
             screenFade.color = newColor;  // Apply the new color to the image
             yield return null;  // Wait for the next frame

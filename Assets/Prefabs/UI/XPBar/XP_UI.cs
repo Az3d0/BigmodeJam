@@ -7,18 +7,20 @@ public class XP_UI : MonoBehaviour
 {
     [SerializeField] private Image m_XPBar;
     private Color m_xpBarColor;
-    [SerializeField] private float m_fillSpeedInSec = 0.5f; 
+    [SerializeField] private float m_fillSpeedInSec = 0.5f;
+    [SerializeField] private AudioSource m_winMinigame;
+    [SerializeField] private AudioSource m_loseMinigame;
     private int m_maxXP;
     private int m_currentXP;
 
     private void Awake()
     {
-        m_xpBarColor = m_XPBar.color;
+        ResetXPBar();
     }
     private void Start()
     {
+        m_maxXP = GameManager.Instance.XPRequiredToGoNextLevel;
         GameManager.Instance.OnXPUpdated += UpdateXPBar;
-        ResetXPBar();
     }
 
     private void OnDestroy()
@@ -27,7 +29,7 @@ public class XP_UI : MonoBehaviour
     }
     private void ResetXPBar()
     {
-        m_maxXP = GameManager.Instance.XPRequiredToGoNextLevel;
+        m_xpBarColor = m_XPBar.color;
         m_XPBar.transform.localScale = new Vector3(0, 1, 1);
     }
     private void UpdateXPBar(int xpAmount)
@@ -35,10 +37,12 @@ public class XP_UI : MonoBehaviour
         if(xpAmount < m_currentXP)
         {
             m_XPBar.color = Color.red;
+            m_loseMinigame.Play();
         }
         if(xpAmount > m_currentXP)
         {
             m_XPBar.color = Color.green;
+            m_winMinigame.Play();
         }
         m_currentXP = xpAmount;
         float ratio = (float)m_currentXP / (float)m_maxXP;

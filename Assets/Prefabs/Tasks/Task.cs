@@ -21,9 +21,12 @@ public class Task : MonoBehaviour
     [SerializeField] private GameObject m_minigamePrefab;
     public float MinigameLength = 5;
     public AudioSource minigameMusic;
+
+
     private GameObject m_minigame;
     private Minigame m_minigameScript;
     public static event Action<bool> OnMinigameEnd;
+
 
     private void Start()
     {
