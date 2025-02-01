@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      washopen_0: 8989527856703608010
+      washopen_1: -7206567101737843718
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
