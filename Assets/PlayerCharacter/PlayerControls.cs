@@ -80,7 +80,7 @@ public class PlayerControls : MonoBehaviour
 
         if (m_interactableObject != null)
         {
-            if (m_interactableObject.TryGetComponent<MinigameOpener>(out MinigameOpener minigameOpener))
+            if (m_interactableObject.TryGetComponent<Task>(out Task minigameOpener))
             {
                 minigameOpener.OpenMinigame();
             }
