@@ -17,7 +17,7 @@ public class StartGame : MonoBehaviour
     private IEnumerator LoadSceneCoroutine(int index)
     {
         // Start loading the scene additively
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(index, LoadSceneMode.Single);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(index, LoadSceneMode.Additive);
 
         // Wait until the scene is fully loaded
         while (!asyncLoad.isDone)
@@ -35,6 +35,6 @@ public class StartGame : MonoBehaviour
     {
 
         LoadSceneAndSetActive(buildIndexOfFirstLevelScene);
-        SceneManager.LoadSceneAsync(buildIndexOfManagersScene, LoadSceneMode.Additive);
+        //SceneManager.LoadSceneAsync(buildIndexOfManagersScene, LoadSceneMode.Additive);
     }
 }

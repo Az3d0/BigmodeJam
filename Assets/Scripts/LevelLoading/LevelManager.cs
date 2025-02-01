@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] public LevelList levelList;
     [SerializeField] public int currentLevelIndex = 0;
-    [SerializeField] public string currentLevelName = "Level1";
+    [SerializeField] public string currentLevelName = "MainMenu";
     public static Level currentLevel;
 
     Scene currentScene;
