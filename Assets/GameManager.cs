@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
         ResetVariables(levelManager.levelList.levels[0]);
 
         //Subscribe to Minigame end
-        Minigame.OnGameEnded += UpdateXp;
+        //Minigame.OnGameEnded += UpdateXp;
         LevelManager.OnLevelLoaded += ResetVariables;
 
 #if UNITY_EDITOR

@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 538834746903993984}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -55,6 +55,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757250b70e787ef498f81d7ac279984b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minigameCountdown: {fileID: 6426539229188520524}
+  MinigameLenth: 0
   win: 0
   m_vomitAsset: {fileID: 4452701333567554415, guid: 6b46210fcfa9fcd449972565b73ac189, type: 3}
   m_vomitSpawnPoints:
@@ -64,6 +66,7 @@ MonoBehaviour:
   - {fileID: 5074178237921594660}
   - {fileID: 1361057397231115546}
   - {fileID: 2547470767705234745}
+  m_numberOfVomits: 3
 --- !u!1 &1361057397231115546
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +836,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1afcbeaaa8e5ac43b7722af6a17a129, type: 3}
+--- !u!114 &6426539229188520524 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2214759004220857246, guid: b1afcbeaaa8e5ac43b7722af6a17a129, type: 3}
+  m_PrefabInstance: {fileID: 5157678158099145170}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff2fdc58807af714b85b8db28d9cd758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7983724489677868831 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2979170645203250893, guid: b1afcbeaaa8e5ac43b7722af6a17a129, type: 3}
