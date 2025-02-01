@@ -9,8 +9,9 @@ public class PauseMenu : MonoBehaviour
     {
         if (playerControls == null)
         {
-            GameObject pc = GameObject.Find("Player");
-            playerControls = (pc != null)? pc.GetComponent<PlayerControls>() : null;
+            //GameObject pc = GameObject.Find("Player");
+            //playerControls = (pc != null)? pc.GetComponent<PlayerControls>() : null;
+            playerControls = PlayerControls.Instance;
         }
 
         if (playerControls != null)

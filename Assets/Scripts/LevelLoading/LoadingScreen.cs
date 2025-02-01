@@ -60,8 +60,7 @@ public class LoadingScreen : MonoBehaviour
     {
         if (playerControls == null)
         {
-            GameObject pc = GameObject.Find("Player");
-            playerControls = (pc != null) ? pc.GetComponent<PlayerControls>() : null;
+            playerControls = PlayerControls.Instance;
         }
         if (playerControls != null)
         {
@@ -75,13 +74,15 @@ public class LoadingScreen : MonoBehaviour
     {
         if (playerControls == null)
         {
-            GameObject pc = GameObject.Find("Player");
-            playerControls = (pc != null) ? pc.GetComponent<PlayerControls>() : null;
+            //GameObject pc = GameObject.Find("Player");
+            //playerControls = (pc != null) ? pc.GetComponent<PlayerControls>() : null;
+            playerControls = PlayerControls.Instance;
         }
-        if (playerControls != null)
-        {
-            playerControls.EnablePlayerMovement(true);
-        }
-        yield return screenFade.DOFade(0, fadeDuration).WaitForCompletion();
+        yield return screenFade.DOFade(0, fadeDuration).OnComplete(()=> {
+            if (playerControls != null)
+            {
+                playerControls.EnablePlayerMovement(true);
+            }
+        });
     }
 }

@@ -37,7 +37,8 @@ public class PlayerControls : MonoBehaviour
         }
 
         m_inputs = new InputSystem_Actions();
-        m_inputs.Enable();
+        //m_inputs.Enable();
+        DisablePlayerMovement(true);
 
 
         m_rigidbody = GetComponent<Rigidbody2D>();
