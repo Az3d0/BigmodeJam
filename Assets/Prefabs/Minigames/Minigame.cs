@@ -8,9 +8,9 @@ public abstract class Minigame : MonoBehaviour
     [HideInInspector] public float MinigameLenth;
 
     //update this in child classes depending on specific win requirements
-    public bool win = false;
+    [HideInInspector] public bool win = false;
 
-    private void Start()
+    public virtual void Start()
     {
         m_minigameCountdown.StartCountdown(MinigameLenth);
         m_minigameCountdown.OnTimesUp += TriggerGameEnd;

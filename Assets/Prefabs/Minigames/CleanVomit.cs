@@ -23,7 +23,13 @@ public class CleanVomit : Minigame
         m_inputs.Minigame1.Enable();
         m_inputs.Minigame1.Select.performed += RaycastFromMouse;
         m_inputs.Minigame1.Select.canceled += ResetDragableObject;
+
+    }
+
+    public override void Start()
+    {
         GenerateVomit();
+        base.Start();
     }
 
     private void ResetDragableObject(InputAction.CallbackContext context)
@@ -64,8 +70,10 @@ public class CleanVomit : Minigame
         while (m_selectedSpawnPoints.Count < m_numberOfVomits)
         {
             int random = UnityEngine.Random.Range(0, m_vomitSpawnPoints.Count);
-            if (m_selectedSpawnPoints.Contains(m_vomitSpawnPoints[random])) return;
-            m_selectedSpawnPoints.Add(m_vomitSpawnPoints[random]);
+            if (!m_selectedSpawnPoints.Contains(m_vomitSpawnPoints[random]))
+            {
+                m_selectedSpawnPoints.Add(m_vomitSpawnPoints[random]);
+            }
         }
 
         foreach(GameObject vomitSpawn in m_selectedSpawnPoints)

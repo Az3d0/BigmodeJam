@@ -12,7 +12,6 @@ public class VomitPuddle : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("Wipe");
         if(collision.gameObject.tag == "Mop" && Input.mousePositionDelta != Vector3.zero)
         {
             var tempColor = vomit.color;
