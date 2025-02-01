@@ -18,6 +18,17 @@ public class Countdown : MonoBehaviour
         m_stopwatch = new Stopwatch();
         m_stopwatch.Stop();
     }
+    private void OnEnable()
+    {
+        PlayerControls.OnPause += PauseCountdown;
+        PlayerControls.OnUnpause += ResumeCountdown;
+    }
+    private void OnDisable()
+    {
+        PlayerControls.OnPause -= PauseCountdown;
+        PlayerControls.OnUnpause -= ResumeCountdown;
+
+    }
     public void StartCountdown(float timerLengthInSec)
     {
         UnityEngine.Debug.Log("start");
@@ -28,6 +39,16 @@ public class Countdown : MonoBehaviour
         m_timerLengthinMilSec = timerLengthInSec * 1000;
         
         m_stopwatch.Reset();
+        m_stopwatch.Start();
+    }
+
+    public void PauseCountdown()
+    {
+        m_stopwatch.Stop();
+    }
+
+    public void ResumeCountdown()
+    {
         m_stopwatch.Start();
     }
 

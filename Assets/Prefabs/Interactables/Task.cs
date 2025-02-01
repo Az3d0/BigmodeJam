@@ -58,13 +58,13 @@ public class Task : MonoBehaviour
             Debug.Log("no minigamecountdown found");
         }
         
-        PlayerControls.Instance.DisablePlayerMovement();
+        PlayerControls.Instance.DisablePlayerMovement(false);
     }
 
     public void CloseMinigame()
     {
         Destroy(m_minigame);
-        PlayerControls.Instance.EnablePlayerMovement();
+        PlayerControls.Instance.EnablePlayerMovement(false);
 
         //Resume main music
         if (minigameMusic != null)

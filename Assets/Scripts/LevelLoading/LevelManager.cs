@@ -57,6 +57,12 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(HandleLevelTransition(currentLevelIndex + 1, true));
     }
 
+    public void RestartGame()
+    {
+        BeforeLevelUnloaded?.Invoke();
+        StartCoroutine(HandleLevelTransition(0, true));
+    }
+
     private IEnumerator HandleLevelTransition(int nextLevelIndex, bool unloadCurrentLevel)
     {
         if (BeforeLevelUnloaded != null)

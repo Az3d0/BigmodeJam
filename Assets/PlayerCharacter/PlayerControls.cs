@@ -21,6 +21,8 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] private float stopForceMultiplier = 10f;
 
     public event Action<GameObject> UpdateInteractable;
+    public static event Action OnPause;
+    public static event Action OnUnpause;
 
     private Animator animator;
 
@@ -79,7 +81,7 @@ public class PlayerControls : MonoBehaviour
     {
         if (pauseMenu == null)
         {
-            pauseMenu = GameObject.Find("Settings");
+            pauseMenu = GameObject.Find("PauseMenu");
         }
         if (pauseMenu != null) 
         {
@@ -88,21 +90,27 @@ public class PlayerControls : MonoBehaviour
                 OpenPauseMenu();
             } else
             {
+                
                 ClosePauseMenu();
             }
-        } 
+        } else
+        {
+            Debug.Log("Can't find pause menu!!");
+        }
     }
 
-    private void OpenPauseMenu()
+    public void OpenPauseMenu()
     {
-        DisablePlayerMovement();
+        DisablePlayerMovement(false);
+        pauseMenu.GetComponent<PauseMenu>().pauseBackground.SetActive(true);
         pauseMenu.GetComponents<Tween_Scale>()[1].TriggerScale();
         isPaused = true;
     }    
     
-    private void ClosePauseMenu()
+    public void ClosePauseMenu()
     {
-        DisablePlayerMovement();
+        EnablePlayerMovement(false);
+        pauseMenu.GetComponent<PauseMenu>().pauseBackground.SetActive(false);
         pauseMenu.GetComponents<Tween_Scale>()[0].TriggerScale();
         isPaused = false;
     }
@@ -145,16 +153,26 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    public void DisablePlayerMovement()
+    public void DisablePlayerMovement(bool isTransition)
     {
+        OnPause?.Invoke();
         m_inputs.Player.Move.Disable();
         m_inputs.Player.Interact.Disable();
+        if (isTransition)
+        {
+            m_inputs.Player.PauseMenu.Disable();
+        }
     }
 
-    public void EnablePlayerMovement()
+    public void EnablePlayerMovement(bool isTransition)
     {
+        OnUnpause?.Invoke();
         m_inputs.Player.Move.Enable();
         m_inputs.Player.Interact.Enable();
+        if (isTransition)
+        {
+            m_inputs.Player.PauseMenu.Enable();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

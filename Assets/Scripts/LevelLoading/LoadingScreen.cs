@@ -8,6 +8,7 @@ public class LoadingScreen : MonoBehaviour
 {
     public Image screenFade;
     public Image playerSprite;
+    PlayerControls playerControls;
     public float fadeDuration = 1f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,20 +44,44 @@ public class LoadingScreen : MonoBehaviour
 
     private void DisplayPromotionSplashArt(Level currentLevel)
     {
-        playerSprite.sprite = currentLevel.playerSprite;
-        playerSprite.transform.DOScale(2, 1)
-            .SetLoops(2, LoopType.Yoyo)
-            .SetEase(Ease.InOutSine)
-            .OnComplete(() => StartCoroutine(Deactivate())); 
+        if(currentLevel.playerSprite != null)
+        {
+            playerSprite.sprite = currentLevel.playerSprite;
+            playerSprite.transform.DOScale(2, 1)
+                .SetLoops(2, LoopType.Yoyo)
+                .SetEase(Ease.InOutSine)
+                .OnComplete(() => StartCoroutine(Deactivate())); 
+        } else
+        {
+            StartCoroutine(Deactivate());
+        }
     }
     private IEnumerator Activate()
     {
+        if (playerControls == null)
+        {
+            GameObject pc = GameObject.Find("Player");
+            playerControls = (pc != null) ? pc.GetComponent<PlayerControls>() : null;
+        }
+        if (playerControls != null)
+        {
+            playerControls.DisablePlayerMovement(true);
+        }
         yield return screenFade.DOFade(1, fadeDuration).WaitForCompletion();
     }    
 
     
     private IEnumerator Deactivate()
     {
+        if (playerControls == null)
+        {
+            GameObject pc = GameObject.Find("Player");
+            playerControls = (pc != null) ? pc.GetComponent<PlayerControls>() : null;
+        }
+        if (playerControls != null)
+        {
+            playerControls.EnablePlayerMovement(true);
+        }
         yield return screenFade.DOFade(0, fadeDuration).WaitForCompletion();
     }
 }
