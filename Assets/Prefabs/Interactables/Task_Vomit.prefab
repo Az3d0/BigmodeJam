@@ -669,9 +669,8 @@ MonoBehaviour:
   m_LifetimeCountdown: {fileID: 3316071672884710332}
   m_lifetimeLength: 20
   m_minigamePrefab: {fileID: 538834746903993984, guid: 40bc6a5a29d501f459c71f4530312269, type: 3}
-  m_minigameLength: 10
-  minigameMusic: {fileID: 5946361218407451084}
   MinigameLength: 5
+  minigameMusic: {fileID: 5946361218407451084}
   m_minigameCountdown: {fileID: 1414756809754964311}
 --- !u!1 &8207850015805028790
 GameObject:

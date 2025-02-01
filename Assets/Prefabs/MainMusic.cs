@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class MainMusic : MonoBehaviour
@@ -13,5 +14,10 @@ public class MainMusic : MonoBehaviour
         {
             AudioSourceComponent = AS;
         }
+    }
+
+    public void CrossFade()
+    {
+        AudioSourceComponent.DOFade(1, 1);
     }
 }

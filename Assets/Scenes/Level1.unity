@@ -142,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4682828023834220449, guid: c59fc4f240f6bc549b91a1e3113483ec, type: 3}
       propertyPath: m_Name
-      value: VomitTask_NewVersion (1)
+      value: Task_Vomit
       objectReference: {fileID: 0}
     - target: {fileID: 7269336371035096383, guid: c59fc4f240f6bc549b91a1e3113483ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -608,7 +608,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4682828023834220449, guid: c59fc4f240f6bc549b91a1e3113483ec, type: 3}
       propertyPath: m_Name
-      value: VomitTask_NewVersion
+      value: Task_Vomit
       objectReference: {fileID: 0}
     - target: {fileID: 7269336371035096383, guid: c59fc4f240f6bc549b91a1e3113483ec, type: 3}
       propertyPath: m_LocalPosition.x

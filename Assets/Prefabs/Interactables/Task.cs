@@ -33,7 +33,8 @@ public class Task : MonoBehaviour
         //Stop main music and play minigame music
         if (MainMusic.Instance.AudioSourceComponent != null) 
         {
-            MainMusic.Instance.AudioSourceComponent.Stop();
+            MainMusic.Instance.AudioSourceComponent.volume = 0;
+            MainMusic.Instance.AudioSourceComponent.Pause();
         }
         else
         {
@@ -73,6 +74,7 @@ public class Task : MonoBehaviour
         if (MainMusic.Instance.AudioSourceComponent != null)
         {
             MainMusic.Instance.AudioSourceComponent.Play();
+            MainMusic.Instance.CrossFade();
         }
     }
 }
