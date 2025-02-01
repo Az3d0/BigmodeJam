@@ -21,9 +21,12 @@ public class Task : MonoBehaviour
     [SerializeField] private GameObject m_minigamePrefab;
     public float MinigameLength = 5;
     public AudioSource minigameMusic;
+
+
     private GameObject m_minigame;
     private Minigame m_minigameScript;
     public static event Action<bool> OnMinigameEnd;
+
 
     private void Start()
     {
@@ -37,6 +40,7 @@ public class Task : MonoBehaviour
         m_lifeTimeCounterOver = true;
         if (m_minigame == null)
         {
+            GameManager.Instance.UpdateXp(false);
             Debug.Log("Lost");
             Destroy(gameObject);
 
@@ -76,6 +80,7 @@ public class Task : MonoBehaviour
 
         if (isWon)
         {
+            GameManager.Instance.UpdateXp(true);
             Debug.Log("won");
             Destroy(gameObject);
         }
@@ -83,6 +88,7 @@ public class Task : MonoBehaviour
         {
             if(m_lifeTimeCounterOver)
             {
+                GameManager.Instance.UpdateXp(false);
                 Debug.Log("Lost");
                 Destroy(gameObject);
             }

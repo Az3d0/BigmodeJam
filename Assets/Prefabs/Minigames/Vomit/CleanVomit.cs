@@ -52,7 +52,6 @@ public class CleanVomit : Minigame
                 m_draggedObject = dragableObject;
                 m_draggedObject.SetIsBeingDragged(context.ReadValueAsButton());
             }
-            Debug.Log(hit.collider.gameObject.name);
         } 
     }
 

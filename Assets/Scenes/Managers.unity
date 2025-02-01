@@ -150,7 +150,7 @@ MonoBehaviour:
   levelManager: {fileID: 0}
   winXpAmount: 5
   lossXpAmount: 2
-  xpRequiredToGoNextLevel: 0
+  xpRequiredToGoNextLevel: 30
   currentXp: 0
 --- !u!4 &187852202
 Transform:

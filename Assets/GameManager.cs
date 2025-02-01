@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
     public LevelManager levelManager;
     public int winXpAmount = 5;
     public int lossXpAmount = 2;
@@ -11,9 +13,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int currentXp;
 
-    private void OnEnable()
+    public int XPRequiredToGoNextLevel => xpRequiredToGoNextLevel;
+
+    public event Action<int> OnXPUpdated;
+    private void Awake()
     {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+        }
     }
 
     void Start()
@@ -26,6 +34,7 @@ public class GameManager : MonoBehaviour
         //Minigame.OnGameEnded += UpdateXp;
         LevelManager.OnLevelLoaded += ResetVariables;
 
+
 #if UNITY_EDITOR
         //if playtesting from  a specific level, manually update game manager variables
         if (!SceneManager.GetActiveScene().name.Equals("MainMenu"))
@@ -34,19 +43,26 @@ public class GameManager : MonoBehaviour
             ResetVariables(levelManager.levelList.levels.Find(level => level.sceneName == SceneManager.GetActiveScene().name));
         }
 #endif
-
+        //For level 1, start with a bit of points so you dont die
+        if (levelManager.currentLevelName == "Level1")
+        {
+            UpdateXp(true);
+        }
     }
 
-    private void UpdateXp(bool win)
+    public void UpdateXp(bool win)
     {
+
         if (win)
         {
             currentXp += winXpAmount; 
 
         } else
         {
-            currentXp += lossXpAmount;
+            currentXp -= lossXpAmount;
         }
+        Debug.Log(currentXp);
+        OnXPUpdated?.Invoke(currentXp);
         CheckIfEnoughXp();
     }
 
