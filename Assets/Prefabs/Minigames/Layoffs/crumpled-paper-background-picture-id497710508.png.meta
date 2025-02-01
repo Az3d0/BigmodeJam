@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      crumpled-paper-background-picture-id497710508_0: -8127430816261518986
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

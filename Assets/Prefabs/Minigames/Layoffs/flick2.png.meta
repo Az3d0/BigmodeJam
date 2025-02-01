@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flick2_0: 8074601310509673291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

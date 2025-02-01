@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flickyhand1_0: -5361816899600669875
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
