@@ -10,8 +10,8 @@ public class Countdown : MonoBehaviour
     [SerializeField] protected GameObject m_countdownFillUI;
     [SerializeField] protected GameObject m_countdownTextUI;
 
-    private Stopwatch m_stopwatch;
-    private float m_timerLengthinMilSec;
+    protected Stopwatch m_stopwatch;
+    protected float m_timerLengthinMilSec;
 
     public virtual void Awake()
     {
@@ -60,7 +60,7 @@ public class Countdown : MonoBehaviour
 
         m_stopwatch.Stop();
     }
-    private void FixedUpdate()
+    public virtual void FixedUpdate()
     {
         if (!m_stopwatch.IsRunning) return;
 
