@@ -668,6 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d42472a03884cd48ae2a61f4b830850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_lightSource: {fileID: 0}
   speed: 5
   verticalShift: 2
   amplitude: 2
@@ -923,6 +924,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5318457319662820152, guid: 26586b9d1f462954c89a899bded93d07, type: 3}
+      propertyPath: m_flashingLight
+      value: 
+      objectReference: {fileID: 5610679288753221322}
     - target: {fileID: 6076428840803263316, guid: 26586b9d1f462954c89a899bded93d07, type: 3}
       propertyPath: m_Name
       value: LifetimeTimer
