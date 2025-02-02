@@ -44,7 +44,7 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    public void LoadNextLevel()
+    public bool LoadNextLevel()
     {
 
         //LOAD NEXT LEVEL
@@ -52,10 +52,11 @@ public class LevelManager : MonoBehaviour
         if (currentLevelIndex >= levelList.levels.Count - 1)
         {
             Debug.Log("Game over! Nothing left to do.");
-            return;
+            return false;
         }
         BeforeLevelUnloaded?.Invoke();
         StartCoroutine(HandleLevelTransition(currentLevelIndex + 1, true));
+        return true;
     }
 
     public bool LoadPreviousLevel()
