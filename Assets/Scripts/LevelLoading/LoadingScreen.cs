@@ -47,7 +47,10 @@ public class LoadingScreen : MonoBehaviour
         if(currentLevel.playerSprite != null)
         {
             playerSprite.sprite = currentLevel.playerSprite;
-            playerSprite.transform.DOScale(2, 1)
+            playerSprite.transform.DOBlendableRotateBy(new Vector3(0, 0, -360), 1, RotateMode.FastBeyond360)
+                 .SetEase(Ease.Linear) 
+                 .SetLoops(4, LoopType.Restart); 
+            playerSprite.transform.DOScale(3f, 1.2f)
                 .SetLoops(2, LoopType.Yoyo)
                 .SetEase(Ease.InOutSine)
                 .OnComplete(() => StartCoroutine(Deactivate())); 
