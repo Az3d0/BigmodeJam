@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      minigame calmcustomer background_0: -5598384993504630040
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      minigame puke background_0: 1132056210371218258
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
