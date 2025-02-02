@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        levelManager =  FindFirstObjectByType<LevelManager>();
+        levelManager = FindFirstObjectByType<LevelManager>();
 
         ResetVariables(levelManager.levelList.levels[0]);
 
@@ -55,9 +55,10 @@ public class GameManager : MonoBehaviour
 
         if (win)
         {
-            currentXp += winXpAmount; 
+            currentXp += winXpAmount;
 
-        } else
+        }
+        else
         {
             currentXp -= lossXpAmount;
         }

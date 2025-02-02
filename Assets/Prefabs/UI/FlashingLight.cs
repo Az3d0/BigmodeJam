@@ -1,9 +1,7 @@
-using DG.Tweening;
-using Mono.Cecil;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-[RequireComponent (typeof(Light2D))]
+[RequireComponent(typeof(Light2D))]
 public class FlashingLight : MonoBehaviour
 {
     [HideInInspector] public Light2D m_lightSource;

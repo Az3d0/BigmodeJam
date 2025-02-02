@@ -1,5 +1,4 @@
 using DG.Tweening;
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,8 +18,22 @@ public class XP_UI : MonoBehaviour
     }
     private void Start()
     {
-        m_maxXP = GameManager.Instance.XPRequiredToGoNextLevel;
         GameManager.Instance.OnXPUpdated += UpdateXPBar;
+    }
+    private void OnEnable()
+    {
+        LevelManager.OnLevelLoaded += SetMaxXp;
+    }
+
+    private void OnDisable()
+    {
+        LevelManager.OnLevelLoaded -= SetMaxXp;
+    }
+
+    private void SetMaxXp(Level level)
+    {
+        m_maxXP = level.xpThreshold;
+        Debug.Log("xp bar max xp set to: " + m_maxXP);
     }
 
     private void OnDestroy()
@@ -34,12 +47,12 @@ public class XP_UI : MonoBehaviour
     }
     private void UpdateXPBar(int xpAmount)
     {
-        if(xpAmount < m_currentXP)
+        if (xpAmount < m_currentXP)
         {
             m_XPBar.color = Color.red;
             m_loseMinigame.Play();
         }
-        if(xpAmount > m_currentXP)
+        if (xpAmount > m_currentXP)
         {
             m_XPBar.color = Color.green;
             m_winMinigame.Play();

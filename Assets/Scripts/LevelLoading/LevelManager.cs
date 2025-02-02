@@ -29,10 +29,11 @@ public class LevelManager : MonoBehaviour
             currentLevelName = currentScene.name;
             currentLevelIndex = levelList.levels.FindIndex(level => level.name.Equals(currentLevelName));
             currentLevel = levelList.levels[currentLevelIndex];
-            if (currentLevelIndex == -1) 
+            if (currentLevelIndex == -1)
             {
                 Debug.Log("Current level not found in level list!");
             }
+            OnLevelLoaded?.Invoke(currentLevel);
         }
 #endif
     }
@@ -40,7 +41,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void LoadNextLevel()
@@ -81,7 +82,7 @@ public class LevelManager : MonoBehaviour
         //ACTIVATE LOADING SCREEN HERE
 
         //UNLOAD CURRENT LEVEL
-        if (unloadCurrentLevel) 
+        if (unloadCurrentLevel)
         {
             UnloadCurrentLevel();
         }
@@ -106,11 +107,11 @@ public class LevelManager : MonoBehaviour
 
     private void UnloadCurrentLevel()
     {
-        
+
         Debug.Log("Unloading level: " + levelList.levels[currentLevelIndex]);
         SceneManager.UnloadSceneAsync(levelList.levels[currentLevelIndex].sceneName);
     }
 
-    
+
 
 }

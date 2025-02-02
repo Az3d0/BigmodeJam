@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CapsuleCollider2D))]
@@ -38,7 +37,7 @@ public class PlayerControls : MonoBehaviour
 
         m_inputs = new InputSystem_Actions();
         //m_inputs.Enable();
-        
+
 
 
         m_rigidbody = GetComponent<Rigidbody2D>();
@@ -88,17 +87,19 @@ public class PlayerControls : MonoBehaviour
         {
             pauseMenu = GameObject.Find("PauseMenu");
         }
-        if (pauseMenu != null) 
+        if (pauseMenu != null)
         {
             if (!isPaused)
             {
                 OpenPauseMenu();
-            } else
+            }
+            else
             {
-                
+
                 ClosePauseMenu();
             }
-        } else
+        }
+        else
         {
             Debug.Log("Can't find pause menu!!");
         }
@@ -110,8 +111,8 @@ public class PlayerControls : MonoBehaviour
         pauseMenu.GetComponent<PauseMenu>().pauseBackground.SetActive(true);
         pauseMenu.GetComponents<Tween_Scale>()[1].TriggerScale();
         isPaused = true;
-    }    
-    
+    }
+
     public void ClosePauseMenu()
     {
         EnablePlayerMovement(false);
@@ -167,7 +168,7 @@ public class PlayerControls : MonoBehaviour
         }
         m_inputs.Player.Move.Disable();
         m_inputs.Player.Interact.Disable();
-        
+
         //Stop player from opening pause menu during transition
         if (isTransition)
         {
@@ -188,7 +189,7 @@ public class PlayerControls : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Interactable"))
+        if (collision.gameObject.CompareTag("Interactable"))
         {
             UpdateInteractable.Invoke(collision.gameObject);
         }

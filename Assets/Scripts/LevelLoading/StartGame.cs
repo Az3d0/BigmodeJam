@@ -1,5 +1,4 @@
 using System.Collections;
-using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -34,7 +33,7 @@ public class StartGame : MonoBehaviour
     public void LoadManagers()
     {
 
+        SceneManager.LoadSceneAsync(buildIndexOfManagersScene, LoadSceneMode.Additive);
         LoadSceneAndSetActive(buildIndexOfFirstLevelScene);
-        //SceneManager.LoadSceneAsync(buildIndexOfManagersScene, LoadSceneMode.Additive);
     }
 }

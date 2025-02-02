@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class VolumeControl : MonoBehaviour
@@ -19,7 +18,7 @@ public class VolumeControl : MonoBehaviour
         if (LevelManager.currentLevel.sceneName.Equals("MainMenu"))
         {
             GameObject slider = GameObject.FindGameObjectWithTag("PauseVolumeSlider");
-            if (slider != null) 
+            if (slider != null)
             {
                 slider.GetComponent<Slider>().value = volume;
 

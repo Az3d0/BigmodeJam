@@ -1,8 +1,4 @@
-using DG.Tweening;
-using System;
-using System.Diagnostics;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 public class LifetimeCountdown : Countdown
@@ -15,9 +11,9 @@ public class LifetimeCountdown : Countdown
     }
     public override void FixedUpdate()
     {
-        if(m_countdownFillUI.TryGetComponent(out Image image))
+        if (m_countdownFillUI.TryGetComponent(out Image image))
         {
-            if(m_stopwatch.ElapsedMilliseconds < m_timerLengthinMilSec * 0.3)
+            if (m_stopwatch.ElapsedMilliseconds < m_timerLengthinMilSec * 0.3)
             {
                 m_flashingLight.verticalShift = 0.6f;
                 m_flashingLight.amplitude = 0.6f;
@@ -30,7 +26,7 @@ public class LifetimeCountdown : Countdown
                 image.color = Color.yellow;
                 m_flashingLight.speed = 7;
             }
-            else if(m_stopwatch.ElapsedMilliseconds >= m_timerLengthinMilSec * 0.7)
+            else if (m_stopwatch.ElapsedMilliseconds >= m_timerLengthinMilSec * 0.7)
             {
                 m_flashingLight.speed = 15;
                 image.color = Color.red;

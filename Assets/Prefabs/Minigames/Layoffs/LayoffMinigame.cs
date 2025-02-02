@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -47,7 +46,7 @@ public class LayoffMinigame : PointNClickMinigame
 
     private void FixedUpdate()
     {
-        Vector3 mousePosition = new Vector3 (Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, -5);
+        Vector3 mousePosition = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, -5);
         m_mouseFollower.transform.localPosition = mousePosition;
     }
 
@@ -77,7 +76,7 @@ public class LayoffMinigame : PointNClickMinigame
         if (collision.TryGetComponent(out Employee employee))
         {
             m_firedEmployeeNum++;
-            if(m_firedEmployeeNum == m_employeeNum)
+            if (m_firedEmployeeNum == m_employeeNum)
             {
                 win = true;
                 TriggerGameEnd();

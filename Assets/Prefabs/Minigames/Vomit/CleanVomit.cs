@@ -1,9 +1,5 @@
-using NUnit.Framework;
-using System;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class CleanVomit : PointNClickMinigame
 {
@@ -44,7 +40,7 @@ public class CleanVomit : PointNClickMinigame
             }
         }
 
-        foreach(GameObject vomitSpawn in m_selectedSpawnPoints)
+        foreach (GameObject vomitSpawn in m_selectedSpawnPoints)
         {
             var vomit = Instantiate(m_vomitAsset);
             vomit.transform.parent = vomitSpawn.transform;

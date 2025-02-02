@@ -1,8 +1,8 @@
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using DG.Tweening;
 
 public class LoadingScreen : MonoBehaviour
 {
@@ -23,7 +23,7 @@ public class LoadingScreen : MonoBehaviour
         {
             Debug.Log("Loading Screen: Playing from specific level!");
 
-            DisplayPromotionSplashArt(LevelManager.currentLevel);
+            //DisplayPromotionSplashArt(LevelManager.currentLevel);
         }
 #endif
     }
@@ -44,17 +44,18 @@ public class LoadingScreen : MonoBehaviour
 
     private void DisplayPromotionSplashArt(Level currentLevel)
     {
-        if(currentLevel.playerSprite != null)
+        if (currentLevel.playerSprite != null)
         {
             playerSprite.sprite = currentLevel.playerSprite;
             playerSprite.transform.DOBlendableRotateBy(new Vector3(0, 0, -360), 1, RotateMode.FastBeyond360)
-                 .SetEase(Ease.Linear) 
-                 .SetLoops(4, LoopType.Restart); 
+                 .SetEase(Ease.Linear)
+                 .SetLoops(4, LoopType.Restart);
             playerSprite.transform.DOScale(3f, 1.2f)
                 .SetLoops(2, LoopType.Yoyo)
                 .SetEase(Ease.InOutSine)
-                .OnComplete(() => StartCoroutine(Deactivate())); 
-        } else
+                .OnComplete(() => StartCoroutine(Deactivate()));
+        }
+        else
         {
             StartCoroutine(Deactivate());
         }
@@ -71,9 +72,9 @@ public class LoadingScreen : MonoBehaviour
             playerControls.DisablePlayerMovement(true, false);
         }
         yield return screenFade.DOFade(1, fadeDuration).WaitForCompletion();
-    }    
+    }
 
-    
+
     private IEnumerator Deactivate()
     {
         if (playerControls == null)
@@ -82,7 +83,8 @@ public class LoadingScreen : MonoBehaviour
             //playerControls = (pc != null) ? pc.GetComponent<PlayerControls>() : null;
             playerControls = PlayerControls.Instance;
         }
-        yield return screenFade.DOFade(0, fadeDuration).OnComplete(() => {
+        yield return screenFade.DOFade(0, fadeDuration).OnComplete(() =>
+        {
             if (playerControls != null)
             {
                 playerControls.EnablePlayerMovement(true);

@@ -1,18 +1,10 @@
-using NUnit.Framework;
-using UnityEditor;
-using UnityEditor.SceneManagement;
-using UnityEditor.SearchService;
-using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
-using System.Collections.Generic;
 using System;
-using UnityEngine.Rendering.Universal;
+using UnityEngine;
 
 public class Task : MonoBehaviour
 {
     //Task Fields
-    [Header("Task")] 
+    [Header("Task")]
     [SerializeField] private LifetimeCountdown m_LifetimeCountdown;
     [SerializeField] private float m_lifetimeLength;
     private bool m_lifeTimeCounterOver = false;
@@ -50,7 +42,7 @@ public class Task : MonoBehaviour
     public void OpenMinigame()
     {
         //Stop main music and play minigame music
-        if (MainMusic.Instance.AudioSourceComponent != null) 
+        if (MainMusic.Instance.AudioSourceComponent != null)
         {
             MainMusic.Instance.AudioSourceComponent.volume = 0;
             MainMusic.Instance.AudioSourceComponent.Pause();
@@ -71,7 +63,7 @@ public class Task : MonoBehaviour
             m_minigameScript.OnGameEnded += MinigameEnded;
         }
         PlayerControls.Instance.DisablePlayerMovement(false, true);
-        
+
     }
 
     private void MinigameEnded(bool isWon)
@@ -86,7 +78,7 @@ public class Task : MonoBehaviour
         }
         else
         {
-            if(m_lifeTimeCounterOver)
+            if (m_lifeTimeCounterOver)
             {
                 GameManager.Instance.UpdateXp(false);
                 Debug.Log("Lost");

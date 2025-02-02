@@ -8,7 +8,7 @@ public class Employee : ClickableObject
 
     protected override void Awake()
     {
-        if(gameObject.TryGetComponent(out SpriteRenderer sprite))
+        if (gameObject.TryGetComponent(out SpriteRenderer sprite))
         {
             m_spriteRenderer = sprite;
         }

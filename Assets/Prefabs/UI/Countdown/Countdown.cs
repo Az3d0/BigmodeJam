@@ -1,7 +1,6 @@
 using System;
 using System.Diagnostics;
 using TMPro;
-using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class Countdown : MonoBehaviour
@@ -38,7 +37,7 @@ public class Countdown : MonoBehaviour
         m_countdownTextUI.SetActive(true);
 
         m_timerLengthinMilSec = timerLengthInSec * 1000;
-        
+
         m_stopwatch.Reset();
         m_stopwatch.Start();
     }
@@ -70,9 +69,9 @@ public class Countdown : MonoBehaviour
     {
         if (!m_stopwatch.IsRunning) return;
         //UnityEngine.Debug.Log(gameObject.name + ": " + m_stopwatch.Elapsed.ToString());
-        m_countdownFillUI.transform.localScale = new Vector3(1f  - m_stopwatch.ElapsedMilliseconds / (1000f * m_timerLengthinMilSec / 1000f) , 1, 1);
+        m_countdownFillUI.transform.localScale = new Vector3(1f - m_stopwatch.ElapsedMilliseconds / (1000f * m_timerLengthinMilSec / 1000f), 1, 1);
 
-        m_countdownTextUI.GetComponent<TextMeshProUGUI>().text = (m_timerLengthinMilSec/1000 - m_stopwatch.ElapsedMilliseconds / 1000).ToString();
+        m_countdownTextUI.GetComponent<TextMeshProUGUI>().text = (m_timerLengthinMilSec / 1000 - m_stopwatch.ElapsedMilliseconds / 1000).ToString();
 
         if (m_stopwatch.ElapsedMilliseconds >= m_timerLengthinMilSec)
         {

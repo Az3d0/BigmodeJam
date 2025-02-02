@@ -20,7 +20,7 @@ public abstract class Minigame : MonoBehaviour
     {
         Debug.Log($"{gameObject.name} - Minigame won? {win}");
 
-        OnGameEnded?.Invoke(win); 
+        OnGameEnded?.Invoke(win);
     }
 
     protected virtual void OnDestroy()

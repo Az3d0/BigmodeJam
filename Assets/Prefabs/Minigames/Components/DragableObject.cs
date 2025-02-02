@@ -15,7 +15,7 @@ public class DragableObject : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if(m_isBeingDragged)
+        if (m_isBeingDragged)
         {
             //transform.position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, -5);
             m_rigidBody.AddForce(Input.mousePositionDelta * m_speed);
