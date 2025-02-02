@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 208223922915619605}
   - component: {fileID: 8629505005581760858}
   - component: {fileID: 8781825978801369738}
+  - component: {fileID: 8250586872205118966}
   m_Layer: 6
   m_Name: LayoffMinigame
   m_TagString: Untagged
@@ -112,6 +113,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!210 &8250586872205118966
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538834746903993984}
+  m_Enabled: 1
+  m_SortingLayerID: 397302209
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1 &1897160127403373023
 GameObject:
   m_ObjectHideFlags: 0
