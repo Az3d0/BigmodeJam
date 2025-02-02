@@ -2479,7 +2479,6 @@ GameObject:
   - component: {fileID: 1665162873}
   - component: {fileID: 1665162877}
   - component: {fileID: 1665162872}
-  - component: {fileID: 1665162871}
   - component: {fileID: 1665162870}
   m_Layer: 0
   m_Name: GameOver
@@ -2501,19 +2500,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverBackground: {fileID: 460673908}
---- !u!114 &1665162871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665162869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dc26e5d3f348c14f8ebdf4fdfaa7b3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 0}
 --- !u!114 &1665162872
 MonoBehaviour:
   m_ObjectHideFlags: 0
