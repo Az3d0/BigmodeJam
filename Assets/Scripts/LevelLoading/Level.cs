@@ -6,6 +6,7 @@ public class Level : ScriptableObject
     public string sceneName;
     public int xpThreshold;
     public Sprite playerSprite;
+    public Sprite employeeCardSprite;
 
     public Level(string name, int xpThreshold)
     {

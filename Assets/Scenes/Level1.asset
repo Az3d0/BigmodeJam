@@ -15,3 +15,4 @@ MonoBehaviour:
   sceneName: Level1
   xpThreshold: 30
   playerSprite: {fileID: -193897809235608604, guid: 0c85f670e757011489dc948358f5aeba, type: 3}
+  employeeCardSprite: {fileID: 7806474668370280072, guid: 36729a4ad6bd9694daf3851650b452bf, type: 3}
