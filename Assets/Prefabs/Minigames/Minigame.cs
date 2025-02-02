@@ -3,6 +3,7 @@ using UnityEngine;
 
 public abstract class Minigame : MonoBehaviour
 {
+    protected InputSystem_Actions m_inputs;
     public event Action<bool> OnGameEnded;
     [SerializeField] private MinigameCountdown m_minigameCountdown;
     [HideInInspector] public float MinigameLenth;

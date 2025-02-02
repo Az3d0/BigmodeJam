@@ -69,7 +69,7 @@ public class Countdown : MonoBehaviour
     public virtual void FixedUpdate()
     {
         if (!m_stopwatch.IsRunning) return;
-        UnityEngine.Debug.Log(gameObject.name + ": " + m_stopwatch.Elapsed.ToString());
+        //UnityEngine.Debug.Log(gameObject.name + ": " + m_stopwatch.Elapsed.ToString());
         m_countdownFillUI.transform.localScale = new Vector3(1f  - m_stopwatch.ElapsedMilliseconds / (1000f * m_timerLengthinMilSec / 1000f) , 1, 1);
 
         m_countdownTextUI.GetComponent<TextMeshProUGUI>().text = (m_timerLengthinMilSec/1000 - m_stopwatch.ElapsedMilliseconds / 1000).ToString();

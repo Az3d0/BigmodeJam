@@ -1054,6 +1054,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MousePosition"",
+                    ""type"": ""Value"",
+                    ""id"": ""b357e941-67a5-4f43-8796-20790cd74980"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -1076,6 +1085,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Drag"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6973523d-4af1-4019-ab0d-af0141727543"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""MousePosition"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1173,6 +1193,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Minigame1 = asset.FindActionMap("Minigame1", throwIfNotFound: true);
         m_Minigame1_Select = m_Minigame1.FindAction("Select", throwIfNotFound: true);
         m_Minigame1_Drag = m_Minigame1.FindAction("Drag", throwIfNotFound: true);
+        m_Minigame1_MousePosition = m_Minigame1.FindAction("MousePosition", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -1479,12 +1500,14 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private List<IMinigame1Actions> m_Minigame1ActionsCallbackInterfaces = new List<IMinigame1Actions>();
     private readonly InputAction m_Minigame1_Select;
     private readonly InputAction m_Minigame1_Drag;
+    private readonly InputAction m_Minigame1_MousePosition;
     public struct Minigame1Actions
     {
         private @InputSystem_Actions m_Wrapper;
         public Minigame1Actions(@InputSystem_Actions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Select => m_Wrapper.m_Minigame1_Select;
         public InputAction @Drag => m_Wrapper.m_Minigame1_Drag;
+        public InputAction @MousePosition => m_Wrapper.m_Minigame1_MousePosition;
         public InputActionMap Get() { return m_Wrapper.m_Minigame1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1500,6 +1523,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Drag.started += instance.OnDrag;
             @Drag.performed += instance.OnDrag;
             @Drag.canceled += instance.OnDrag;
+            @MousePosition.started += instance.OnMousePosition;
+            @MousePosition.performed += instance.OnMousePosition;
+            @MousePosition.canceled += instance.OnMousePosition;
         }
 
         private void UnregisterCallbacks(IMinigame1Actions instance)
@@ -1510,6 +1536,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Drag.started -= instance.OnDrag;
             @Drag.performed -= instance.OnDrag;
             @Drag.canceled -= instance.OnDrag;
+            @MousePosition.started -= instance.OnMousePosition;
+            @MousePosition.performed -= instance.OnMousePosition;
+            @MousePosition.canceled -= instance.OnMousePosition;
         }
 
         public void RemoveCallbacks(IMinigame1Actions instance)
@@ -1602,5 +1631,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     {
         void OnSelect(InputAction.CallbackContext context);
         void OnDrag(InputAction.CallbackContext context);
+        void OnMousePosition(InputAction.CallbackContext context);
     }
 }

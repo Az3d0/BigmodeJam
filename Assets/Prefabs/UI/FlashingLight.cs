@@ -6,7 +6,7 @@ using UnityEngine.Rendering.Universal;
 [RequireComponent (typeof(Light2D))]
 public class FlashingLight : MonoBehaviour
 {
-    public Light2D m_lightSource;
+    [HideInInspector] public Light2D m_lightSource;
 
     public float speed = 5;
     public float verticalShift = 5;
