@@ -108,6 +108,10 @@ public class Task : MonoBehaviour
 
     private void OnDestroy()
     {
+        if(transform.parent.TryGetComponent(out SpawnPoint spawnPoint))
+        {
+            spawnPoint.isOccupied = false;
+        }
         m_LifetimeCountdown.OnTimesUp -= OnLifeTimesUp;
 
     }
