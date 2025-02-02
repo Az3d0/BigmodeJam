@@ -51,11 +51,26 @@ public class LevelManager : MonoBehaviour
         //Make sure this isn't already the last level before trying to load next level
         if (currentLevelIndex >= levelList.levels.Count - 1)
         {
-            Debug.Log("Game over! This is the last level");
+            Debug.Log("Game over! Nothing left to do.");
             return;
         }
         BeforeLevelUnloaded?.Invoke();
         StartCoroutine(HandleLevelTransition(currentLevelIndex + 1, true));
+    }
+
+    public void LoadPreviousLevel()
+    {
+
+        //LOAD NEXT LEVEL
+        //Make sure this isn't already the first level before trying to load previous level
+        if (currentLevelIndex <= 1)
+        {
+            Debug.Log("Game over! You got fired.");
+            //GAME OVER SCREEN
+            return;
+        }
+        BeforeLevelUnloaded?.Invoke();
+        StartCoroutine(HandleLevelTransition(currentLevelIndex - 1, true));
     }
 
     public void RestartGame()

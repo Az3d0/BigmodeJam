@@ -22,4 +22,11 @@ public class GoNextLevel : MonoBehaviour
 
         levelManager.LoadNextLevel();
     }
+
+    public void PreviousLevel()
+    {
+        if (levelManager == null) levelManager = FindFirstObjectByType<LevelManager>();
+
+        levelManager.LoadPreviousLevel();
+    }
 }
