@@ -6,12 +6,10 @@ using UnityEngine;
 public class Mop : DragableObject
 {
     [SerializeField] private List<AudioSource> m_SFX = new List<AudioSource>();
-    Stopwatch m_stopwatch;
 
     protected override void Awake()
     {
-        m_stopwatch = new Stopwatch();
-        m_stopwatch.Start();
+
         base.Awake();
     }
 
@@ -30,14 +28,6 @@ public class Mop : DragableObject
     }
     protected override void FixedUpdate()
     {
-        if (!m_isBeingDragged) { return; }
-
-        // this is not doing anything at the moment
-        if(m_stopwatch.ElapsedMilliseconds % 100 == 5)
-        {
-            int random = Random.Range(0, m_SFX.Count);
-            m_SFX[random].Play();
-        }
         base.FixedUpdate();
     }
 }

@@ -11,15 +11,6 @@ public class CleanVomit : PointNClickMinigame
     private int m_cleanedVomits = 0;
 
 
-    protected override void Awake()
-    {
-        base.Awake();
-    }
-
-    protected override void OnDestroy()
-    {
-        base.OnDestroy();
-    }
     public override void Start()
     {
         GenerateVomit();

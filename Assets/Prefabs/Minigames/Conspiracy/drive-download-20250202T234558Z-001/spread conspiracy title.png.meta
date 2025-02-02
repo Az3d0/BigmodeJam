@@ -1,0 +1,542 @@
+fileFormatVersion: 2
+guid: 6a80d2be3c4ae3e42ab527233ff79b3a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3516837458503085335
+    second: spread conspiracy title_0
+  - first:
+      213: 4451494889312053767
+    second: spread conspiracy title_1
+  - first:
+      213: 8726743705507487631
+    second: spread conspiracy title_2
+  - first:
+      213: 4508096498030511184
+    second: spread conspiracy title_3
+  - first:
+      213: 3988906868773473443
+    second: spread conspiracy title_4
+  - first:
+      213: -1566378593670863218
+    second: spread conspiracy title_5
+  - first:
+      213: 8680458384191134558
+    second: spread conspiracy title_6
+  - first:
+      213: -1761418154521375159
+    second: spread conspiracy title_7
+  - first:
+      213: -3835859260524078138
+    second: spread conspiracy title_8
+  - first:
+      213: -543520910283549141
+    second: spread conspiracy title_9
+  - first:
+      213: -2695598165383988275
+    second: spread conspiracy title_10
+  - first:
+      213: -538017441337882894
+    second: spread conspiracy title_11
+  - first:
+      213: 2981193453006911361
+    second: spread conspiracy title_12
+  - first:
+      213: 9130728446962243088
+    second: spread conspiracy title_13
+  - first:
+      213: -2986742793833405625
+    second: spread conspiracy title_14
+  - first:
+      213: 6914475767034662641
+    second: spread conspiracy title_15
+  - first:
+      213: -3929899763551173473
+    second: spread conspiracy title_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spread conspiracy title_0
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 594
+        width: 188
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d2dd619015ec030800000000000000
+      internalID: 3516837458503085335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_1
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 602
+        width: 143
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a69ec4403e6cd30800000000000000
+      internalID: 4451494889312053767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_2
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 621
+        width: 178
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f56a4f92f9b1970800000000000000
+      internalID: 8726743705507487631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_3
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 608
+        width: 170
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0548a4a41e9ff8e30800000000000000
+      internalID: 4508096498030511184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_4
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 616
+        width: 223
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3accb5bb9a17b5730800000000000000
+      internalID: 3988906868773473443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_5
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 638
+        width: 226
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86e874d7fa134ae0800000000000000
+      internalID: -1566378593670863218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 252
+        width: 139
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b164dc8ee277870800000000000000
+      internalID: 8680458384191134558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 263
+        width: 152
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e44d6558f2e87e0800000000000000
+      internalID: -1761418154521375159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_8
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 259
+        width: 184
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbd118635a44cac0800000000000000
+      internalID: -3835859260524078138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_9
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 254
+        width: 167
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b265d8e9c960578f0800000000000000
+      internalID: -543520910283549141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_10
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 266
+        width: 208
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcbb71f10cf479ad0800000000000000
+      internalID: -2695598165383988275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_11
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 266
+        width: 178
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f64716dcf39888f0800000000000000
+      internalID: -538017441337882894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_12
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 254
+        width: 179
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187723586a35f5920800000000000000
+      internalID: 2981193453006911361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_13
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 245
+        width: 150
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0161db5552dd6be70800000000000000
+      internalID: 9130728446962243088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_14
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 238
+        width: 210
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7432a12e045fc86d0800000000000000
+      internalID: -2986742793833405625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_15
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 302
+        width: 104
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fec52e531725ff50800000000000000
+      internalID: 6914475767034662641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spread conspiracy title_16
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 216
+        width: 97
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9404ae8cf03679c0800000000000000
+      internalID: -3929899763551173473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
