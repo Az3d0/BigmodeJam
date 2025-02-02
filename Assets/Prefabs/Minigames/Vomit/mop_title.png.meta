@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: a8d251d62366e6449ae54e2ac4b16da9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 844728143661441310
+    second: mop_title_0
+  - first:
+      213: 5023971385059491006
+    second: mop_title_1
+  - first:
+      213: 6359268164643785795
+    second: mop_title_2
+  - first:
+      213: 8733981611273682438
+    second: mop_title_3
+  - first:
+      213: -7474617368655461892
+    second: mop_title_4
+  - first:
+      213: -1897998750404664628
+    second: mop_title_5
+  - first:
+      213: -6006707988595627276
+    second: mop_title_6
+  - first:
+      213: 5539832308398583150
+    second: mop_title_7
+  - first:
+      213: 1326898658576032197
+    second: mop_title_8
+  - first:
+      213: -4705144086735649400
+    second: mop_title_9
+  - first:
+      213: 1057752906838604654
+    second: mop_title_10
+  - first:
+      213: 2912480325665707324
+    second: mop_title_11
+  - first:
+      213: -4576608513833778315
+    second: mop_title_12
+  - first:
+      213: 1850830077458420065
+    second: mop_title_13
+  - first:
+      213: 7766311633545564768
+    second: mop_title_14
+  - first:
+      213: 1647074481771774005
+    second: mop_title_15
+  - first:
+      213: 5965137933292906065
+    second: mop_title_16
+  - first:
+      213: 1402872697464395958
+    second: mop_title_17
+  - first:
+      213: -2508275738937136488
+    second: mop_title_18
+  - first:
+      213: 1372117760066631181
+    second: mop_title_19
+  - first:
+      213: 2401257981182656705
+    second: mop_title_20
+  - first:
+      213: 8400029274646612380
+    second: mop_title_21
+  - first:
+      213: 8399914308190318014
+    second: mop_title_22
+  - first:
+      213: -2360492011563463119
+    second: mop_title_23
+  - first:
+      213: 4318682327223294867
+    second: mop_title_24
+  - first:
+      213: 5003095424222098701
+    second: mop_title_25
+  - first:
+      213: -7484037602774685861
+    second: mop_title_26
+  - first:
+      213: 175957167358643946
+    second: mop_title_27
+  - first:
+      213: -2276170162834425404
+    second: mop_title_28
+  - first:
+      213: 118499469875027707
+    second: mop_title_29
+  - first:
+      213: 5015995809881531198
+    second: mop_title_30
+  - first:
+      213: -5663876317009935521
+    second: mop_title_31
+  - first:
+      213: 7514794858171826737
+    second: mop_title_32
+  - first:
+      213: 1708363733535358422
+    second: mop_title_33
+  - first:
+      213: 6782560121571132237
+    second: mop_title_34
+  - first:
+      213: -944358241713560137
+    second: mop_title_35
+  - first:
+      213: -6118401396879391202
+    second: mop_title_36
+  - first:
+      213: -8769030105548556838
+    second: mop_title_37
+  - first:
+      213: 7382306915111853714
+    second: mop_title_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mop_title_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1127b665c319bb00800000000000000
+      internalID: 844728143661441310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_1
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 815
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcb2384b5bb8b540800000000000000
+      internalID: 5023971385059491006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_2
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 816
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c0b01f3b8a04850800000000000000
+      internalID: 6359268164643785795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_3
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 808
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ef2c63006553970800000000000000
+      internalID: 8733981611273682438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_4
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 814
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1835dfa13d44890800000000000000
+      internalID: -7474617368655461892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_5
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 328
+        width: 381
+        height: 454
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2aef94134f8a5e0800000000000000
+      internalID: -1897998750404664628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_6
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 765
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4faa146c8e2e3aca0800000000000000
+      internalID: -6006707988595627276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_7
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 436
+        width: 167
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d6459122071ec40800000000000000
+      internalID: 5539832308398583150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_8
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 348
+        width: 561
+        height: 411
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1ed5dbc471a6210800000000000000
+      internalID: 1326898658576032197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_9
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 750
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885871dc168f3beb0800000000000000
+      internalID: -4705144086735649400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_10
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 749
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b70402aa4edae00800000000000000
+      internalID: 1057752906838604654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_11
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 744
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c355e9adc653b6820800000000000000
+      internalID: 2912480325665707324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_12
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 747
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573c8e8fdce9c70c0800000000000000
+      internalID: -4576608513833778315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_13
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 743
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161948a36287fa910800000000000000
+      internalID: 1850830077458420065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_14
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 734
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0629774784b77cb60800000000000000
+      internalID: 7766311633545564768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_15
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 719
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5300e9cb3859bd610800000000000000
+      internalID: 1647074481771774005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_16
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 533
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156a12e785d68c250800000000000000
+      internalID: 5965137933292906065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_17
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 511
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8957d1941087310800000000000000
+      internalID: 1402872697464395958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_18
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 496
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89aebed3180d03dd0800000000000000
+      internalID: -2508275738937136488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_19
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 267
+        width: 210
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06b6ce35ddba0310800000000000000
+      internalID: 1372117760066631181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_20
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 428
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0c676596bf25120800000000000000
+      internalID: 2401257981182656705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_21
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 431
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99813abe16e29470800000000000000
+      internalID: 8400029274646612380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_22
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 379
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebda7630f8d729470800000000000000
+      internalID: 8399914308190318014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_23
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 369
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ecc9b9509dd3fd0800000000000000
+      internalID: -2360492011563463119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_24
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 352
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39bd6ebf1ba0feb30800000000000000
+      internalID: 4318682327223294867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_25
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 353
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05f322e7c09e6540800000000000000
+      internalID: 5003095424222098701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_26
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 338
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57e2f0d37b532890800000000000000
+      internalID: -7484037602774685861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_27
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 322
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee88188c10217200800000000000000
+      internalID: 175957167358643946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_28
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 325
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c939ebeb4b6960e0800000000000000
+      internalID: -2276170162834425404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_29
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 286
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe19f7d3aef4a100800000000000000
+      internalID: 118499469875027707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_30
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 282
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3326dafc956c9540800000000000000
+      internalID: 5015995809881531198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_31
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 289
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5300e88f7ed561b0800000000000000
+      internalID: -5663876317009935521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_32
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 285
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1328341cb1ae94860800000000000000
+      internalID: 7514794858171826737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_33
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 283
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ddf88ca3c355b710800000000000000
+      internalID: 1708363733535358422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_34
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 283
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d434af9be7e702e50800000000000000
+      internalID: 6782560121571132237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_35
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 285
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b563fdbe27f4e2f0800000000000000
+      internalID: -944358241713560137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_36
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 290
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1600c1a852171ba0800000000000000
+      internalID: -6118401396879391202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_37
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 271
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5721e44952e4680800000000000000
+      internalID: -8769030105548556838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_title_38
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 274
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ed622b609337660800000000000000
+      internalID: 7382306915111853714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ba3cfe856189b8142913896ee0cabac2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mop_title_0: 844728143661441310
+      mop_title_1: 5023971385059491006
+      mop_title_10: 1057752906838604654
+      mop_title_11: 2912480325665707324
+      mop_title_12: -4576608513833778315
+      mop_title_13: 1850830077458420065
+      mop_title_14: 7766311633545564768
+      mop_title_15: 1647074481771774005
+      mop_title_16: 5965137933292906065
+      mop_title_17: 1402872697464395958
+      mop_title_18: -2508275738937136488
+      mop_title_19: 1372117760066631181
+      mop_title_2: 6359268164643785795
+      mop_title_20: 2401257981182656705
+      mop_title_21: 8400029274646612380
+      mop_title_22: 8399914308190318014
+      mop_title_23: -2360492011563463119
+      mop_title_24: 4318682327223294867
+      mop_title_25: 5003095424222098701
+      mop_title_26: -7484037602774685861
+      mop_title_27: 175957167358643946
+      mop_title_28: -2276170162834425404
+      mop_title_29: 118499469875027707
+      mop_title_3: 8733981611273682438
+      mop_title_30: 5015995809881531198
+      mop_title_31: -5663876317009935521
+      mop_title_32: 7514794858171826737
+      mop_title_33: 1708363733535358422
+      mop_title_34: 6782560121571132237
+      mop_title_35: -944358241713560137
+      mop_title_36: -6118401396879391202
+      mop_title_37: -8769030105548556838
+      mop_title_38: 7382306915111853714
+      mop_title_4: -7474617368655461892
+      mop_title_5: -1897998750404664628
+      mop_title_6: -6006707988595627276
+      mop_title_7: 5539832308398583150
+      mop_title_8: 1326898658576032197
+      mop_title_9: -4705144086735649400
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
