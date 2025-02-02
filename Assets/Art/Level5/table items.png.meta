@@ -112,50 +112,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: table items_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 772
-        width: 200
-        height: 232
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e6231c7513850ce0800000000000000
-      internalID: -1439600377575823645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: table items_1
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 648
-        width: 267
-        height: 259
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9cfae599cf6222ad0800000000000000
-      internalID: -2728575557886365751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: table items_2
       rect:
         serializedVersion: 2
@@ -164,7 +120,7 @@ TextureImporter:
         width: 7
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,45 +134,23 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: table items_3
+      name: table items_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 411
-        width: 503
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bdd31532b10d58f20800000000000000
-      internalID: 3424371906660351451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: table items_4
-      rect:
-        serializedVersion: 2
-        x: 92
+        x: 0
         y: 0
-        width: 413
-        height: 371
+        width: 587
+        height: 1004
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c72c9570a32dfaf40800000000000000
-      internalID: 5742039196593930876
+      spriteID: 09cf8d44589997c4797fc3bbccaefb1d
+      internalID: 1810403522
       vertices: []
       indices: 
       edges: []
@@ -225,7 +159,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 99d761b6f4856024e94cd4b52f1a0e53
     internalID: 0
     vertices: []
     indices: 
@@ -234,7 +168,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      table items_0: 1810403522
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
