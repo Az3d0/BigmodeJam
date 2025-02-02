@@ -378,8 +378,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1.7778, y: 1.7778, z: 1.7778}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 227306109526591189}
   - {fileID: 8595040494974512197}
@@ -482,6 +482,18 @@ PrefabInstance:
     - target: {fileID: 1548466732400130749, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
       propertyPath: m_Name
       value: LifetimeTimer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248543397705139739, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1466.1285
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248543397705139739, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1466.1285
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248543397705139739, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1466.1285
       objectReference: {fileID: 0}
     - target: {fileID: 7527395644808378148, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
       propertyPath: m_Pivot.x
