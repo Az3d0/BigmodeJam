@@ -559,7 +559,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      big desk_0: 1530592482356123379
+      big desk_1: 676831341444459789
+      big desk_10: 721258972515967094
+      big desk_11: 6863484203090402043
+      big desk_12: 1181367280612093705
+      big desk_13: -8542839466109228205
+      big desk_14: -8663386909473259831
+      big desk_15: -7014614881596764813
+      big desk_16: 3108458767531547528
+      big desk_17: -6776714602281520890
+      big desk_2: -5250474193767887400
+      big desk_3: 8738899690872600280
+      big desk_4: -8625705152757407908
+      big desk_5: -7153289290935847836
+      big desk_6: -243269692940814211
+      big desk_7: -7313324860165306475
+      big desk_8: 1917026711381866435
+      big desk_9: 23501514450394937
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
