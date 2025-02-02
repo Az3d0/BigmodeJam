@@ -1,0 +1,360 @@
+fileFormatVersion: 2
+guid: b6420531f13fcdf478ae716685030a17
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7146051941214007508
+    second: CEO DESK_0
+  - first:
+      213: 1783387763342369353
+    second: CEO DESK_1
+  - first:
+      213: 7073330804505282395
+    second: CEO DESK_2
+  - first:
+      213: 9093936594441574810
+    second: CEO DESK_3
+  - first:
+      213: 2029831487369293494
+    second: CEO DESK_4
+  - first:
+      213: -3305604630399354484
+    second: CEO DESK_5
+  - first:
+      213: 1872831782709077911
+    second: CEO DESK_6
+  - first:
+      213: -273229177839626504
+    second: CEO DESK_7
+  - first:
+      213: -1735640006423034347
+    second: CEO DESK_8
+  - first:
+      213: -2884773846203193425
+    second: CEO DESK_9
+  - first:
+      213: -5457210305854822505
+    second: CEO DESK_10
+  - first:
+      213: 2396330628612396634
+    second: CEO DESK_11
+  - first:
+      213: -545636548947749993
+    second: CEO DESK_12
+  - first:
+      213: 5352919472319538210
+    second: CEO DESK_13
+  - first:
+      213: 4502550220696062497
+    second: CEO DESK_14
+  - first:
+      213: -4422657243979420212
+    second: CEO DESK_15
+  - first:
+      213: -7865429263595847031
+    second: CEO DESK_16
+  - first:
+      213: -2071565853256648526
+    second: CEO DESK_17
+  - first:
+      213: -8585526041471990951
+    second: CEO DESK_18
+  - first:
+      213: 6144805442921321969
+    second: CEO DESK_19
+  - first:
+      213: 8143261458500598315
+    second: CEO DESK_20
+  - first:
+      213: -4051820655052837605
+    second: CEO DESK_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CEO DESK_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1899
+        height: 1627
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942ecc2d8bddfb810800000000000000
+      internalID: 1783387763342369353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CEO DESK_15
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 8
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd6c493ba09f92c0800000000000000
+      internalID: -4422657243979420212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CEO DESK_16
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 3
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9824861f1c168d290800000000000000
+      internalID: -7865429263595847031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CEO DESK_17
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 8
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8fec305d15043e0800000000000000
+      internalID: -2071565853256648526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CEO DESK_18
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 4
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9534238ad851ad880800000000000000
+      internalID: -8585526041471990951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CEO DESK_19
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 4
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f556376efbb64550800000000000000
+      internalID: 6144805442921321969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CEO DESK_20
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 4
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2abe03d62da20170800000000000000
+      internalID: 8143261458500598315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CEO DESK_21
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 7
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d2cf9e49a05c7c0800000000000000
+      internalID: -4051820655052837605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ece7f2e8a6f1d134a8a1e6e18260a99a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CEO DESK_22: -110080752
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
