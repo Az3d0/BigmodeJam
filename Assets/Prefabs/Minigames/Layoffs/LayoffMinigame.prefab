@@ -58,6 +58,9 @@ MonoBehaviour:
   m_minigameCountdown: {fileID: 6426539229188520524}
   MinigameLenth: 0
   win: 0
+  m_mouseFollowerAsset: {fileID: 2939769280007032733, guid: 9fa9a65e4ae0ba14a84498cd9055384b, type: 3}
+  m_mouseFollowerSprite_Normal: {fileID: -5361816899600669875, guid: 216c288dc24f5e440ae11e9fa64b6357, type: 3}
+  m_mouseFollowerSprite_Clicked: {fileID: 708934867820985453, guid: ce524e3e6c2bbe443b5cd66cc330860a, type: 3}
   m_employeeAsset: {fileID: 4506698288586097377, guid: db28ae7e7ad2e5347bad9abfb1e8ca7c, type: 3}
   m_employeeSpots:
   - {fileID: 1655019911855874939}
@@ -66,9 +69,6 @@ MonoBehaviour:
   - {fileID: 8206447771381676857}
   - {fileID: 6992052139094101985}
   - {fileID: 3535265230510926274}
-  m_mouseFollowerAsset: {fileID: 2939769280007032733, guid: 9fa9a65e4ae0ba14a84498cd9055384b, type: 3}
-  m_handNormalSprite: {fileID: -5361816899600669875, guid: 216c288dc24f5e440ae11e9fa64b6357, type: 3}
-  m_handFlickedSprite: {fileID: 708934867820985453, guid: ce524e3e6c2bbe443b5cd66cc330860a, type: 3}
 --- !u!68 &8781825978801369738
 EdgeCollider2D:
   m_ObjectHideFlags: 0
