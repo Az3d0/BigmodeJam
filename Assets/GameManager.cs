@@ -56,12 +56,15 @@ public class GameManager : MonoBehaviour
 
         if (win)
         {
+            //Set upper threshold for xp to max required
             currentXp += winXpAmount;
-
+            if (currentXp > xpRequiredToGoNextLevel)
+            {
+                currentXp = xpRequiredToGoNextLevel;
+            }
         }
         else
         {
-            
             currentXp -= lossXpAmount;
             //Set bottom threshold for xp to 0
             if (currentXp < 0)
