@@ -5,7 +5,7 @@ public abstract class Minigame : MonoBehaviour
 {
     protected InputSystem_Actions m_inputs;
     public event Action<bool> OnGameEnded;
-    [SerializeField] private MinigameCountdown m_minigameCountdown;
+    [SerializeField] protected MinigameCountdown m_minigameCountdown;
     [HideInInspector] public float MinigameLenth;
 
     //update this in child classes depending on specific win requirements

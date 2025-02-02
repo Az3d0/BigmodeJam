@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class LayoffMinigame : PointNClickMinigame
 {
+    [Header("Layoff Stuff")]
     [SerializeField] private GameObject m_employeeAsset;
     [SerializeField] private List<GameObject> m_employeeSpots = new List<GameObject>();
 

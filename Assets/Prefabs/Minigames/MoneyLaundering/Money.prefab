@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3685432341881535151}
   - component: {fileID: 6862033570839352280}
-  - component: {fileID: 6859824585336465773}
-  - component: {fileID: 6339059285327740090}
+  - component: {fileID: 144226454780853963}
+  - component: {fileID: 6796630007225387017}
   - component: {fileID: 8148883233258299320}
-  m_Layer: 0
-  m_Name: DragableObject 1
+  m_Layer: 6
+  m_Name: Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7356590668662317618}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.3120685, y: -1.78386, z: -2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.15141153, y: 0.07900225, z: 0.24250093}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -90,8 +90,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &6859824585336465773
-CapsuleCollider2D:
+--- !u!61 &144226454780853963
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -125,9 +125,18 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.0000001, y: 1.9999998}
-  m_Direction: 0
---- !u!114 &6339059285327740090
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 9.86, y: 5.93}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 9.86, y: 5.93}
+  m_EdgeRadius: 0
+--- !u!114 &6796630007225387017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,10 +145,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7356590668662317618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f82ec9aa702a49945abb63835efc5097, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a624901b71a82446a4a159889bcfa85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_speed: 25
+  m_speed: 10
 --- !u!50 &8148883233258299320
 Rigidbody2D:
   serializedVersion: 5
@@ -152,8 +161,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
+  m_Mass: 0.5
+  m_LinearDamping: 2
   m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}

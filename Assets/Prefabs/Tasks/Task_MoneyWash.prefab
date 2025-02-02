@@ -58,8 +58,8 @@ Transform:
   m_GameObject: {fileID: 1259963900411709676}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.241, z: 0}
-  m_LocalScale: {x: 0.50503, y: 0.50503, z: 0.50503}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.058644082, y: 0.058644082, z: 0.058644082}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7269336371035096383}
@@ -108,7 +108,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4631745886286828123, guid: eb78594782c5e3f44b8b10a9941b223b, type: 3}
+  m_Sprite: {fileID: -6907078004047709096, guid: 160516b4fe20c564287ca1fe31d50b83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -263,8 +263,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c7b6b1560909c264ab1d063597439cb7, type: 3}
-  m_Resource: {fileID: 8300000, guid: c7b6b1560909c264ab1d063597439cb7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d5de93a8717de804e82e917ff4498330, type: 3}
+  m_Resource: {fileID: 8300000, guid: d5de93a8717de804e82e917ff4498330, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 8111653839002822942}
   - component: {fileID: 67276241121228902}
   m_Layer: 0
-  m_Name: Task_Layoff
+  m_Name: Task_MoneyWash
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -436,7 +436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LifetimeCountdown: {fileID: 3316071672884710332}
   m_lifetimeLength: 20
-  m_minigamePrefab: {fileID: 538834746903993984, guid: 9a0da2e09da770142aa3a827715698fd, type: 3}
+  m_minigamePrefab: {fileID: 538834746903993984, guid: a26feeb0780388347889f42d3118596a, type: 3}
   MinigameLength: 5
   minigameMusic: {fileID: 5946361218407451084}
 --- !u!1 &8207850015805028790

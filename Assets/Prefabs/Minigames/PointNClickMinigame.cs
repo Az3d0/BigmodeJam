@@ -6,12 +6,15 @@ public class PointNClickMinigame : Minigame
 {
     protected DragableObject m_draggedObject;
 
+    [Header("Optional MouseFollower")]
     [SerializeField] protected GameObject m_mouseFollowerAsset;
     protected SpriteRenderer m_mouseFollowerSpriteRenderer;
     [SerializeField] protected Sprite m_mouseFollowerSprite_Normal;
     [SerializeField] protected Sprite m_mouseFollowerSprite_Clicked;
     protected GameObject m_mouseFollower;
 
+    [Header("Optional MouseFollowerSFX")]
+    [SerializeField] protected AudioSource m_clickSFX;
     protected virtual void Awake()
     {
 
@@ -35,28 +38,28 @@ public class PointNClickMinigame : Minigame
 
         if (m_mouseFollowerAsset == null) return;
         m_mouseFollowerSpriteRenderer.sprite = m_mouseFollowerSprite_Clicked;
+        m_clickSFX.Play();
     }
 
     protected virtual void OnRelease(InputAction.CallbackContext context)
     {
-        ResetDragableObject(context);
+        ReleaseDraggableObject(context);
 
         if (m_mouseFollowerAsset == null) return;
         m_mouseFollowerSpriteRenderer.sprite = m_mouseFollowerSprite_Normal;
     }
     protected override void OnDestroy()
     {
-        TriggerGameEnd();
         m_inputs.Minigame1.Select.started -= OnCLick;
         m_inputs.Minigame1.Select.canceled -= OnRelease;
         m_inputs.Minigame1.Disable();
         base.OnDestroy();
     }
-    protected void ResetDragableObject(InputAction.CallbackContext context)
+    protected void ReleaseDraggableObject(InputAction.CallbackContext context)
     {
         if (m_draggedObject != null)
         {
-            m_draggedObject.SetIsBeingDragged(false);
+            m_draggedObject.OnReleased();
             m_draggedObject = null;
         }
     }
@@ -75,8 +78,11 @@ public class PointNClickMinigame : Minigame
             }
             else if (hitGO.TryGetComponent(out DragableObject dragableObject))
             {
+                //ensures that you only grab one item at a time
+                if (m_draggedObject != null) return;
                 m_draggedObject = dragableObject;
-                m_draggedObject.SetIsBeingDragged(true);
+                m_draggedObject.OnGrabbed();
+
             }
         }
     }
