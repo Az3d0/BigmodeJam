@@ -58,7 +58,7 @@ public class LevelManager : MonoBehaviour
         StartCoroutine(HandleLevelTransition(currentLevelIndex + 1, true));
     }
 
-    public void LoadPreviousLevel()
+    public bool LoadPreviousLevel()
     {
 
         //LOAD NEXT LEVEL
@@ -67,10 +67,11 @@ public class LevelManager : MonoBehaviour
         {
             Debug.Log("Game over! You got fired.");
             //GAME OVER SCREEN
-            return;
+            return false;
         }
         BeforeLevelUnloaded?.Invoke();
         StartCoroutine(HandleLevelTransition(currentLevelIndex - 1, true));
+        return true;
     }
 
     public void RestartGame()

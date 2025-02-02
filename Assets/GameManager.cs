@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int xpRequiredToGoNextLevel;
     [SerializeField]
-    private int currentXp;
+    public int currentXp;
+    public GameObject gameOver;
 
     public int XPRequiredToGoNextLevel => xpRequiredToGoNextLevel;
 
@@ -44,10 +45,10 @@ public class GameManager : MonoBehaviour
         }
 #endif
         //For level 1, start with a bit of points so you dont die
-        if (levelManager.currentLevelName == "Level1")
-        {
-            UpdateXp(true);
-        }
+        //if (levelManager.currentLevelName == "Level1")
+        //{
+        //    UpdateXp(true);
+        //}
     }
 
     public void UpdateXp(bool win)
@@ -60,11 +61,18 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            
             currentXp -= lossXpAmount;
+            //Set bottom threshold for xp to 0
+            if (currentXp < 0)
+            {
+                currentXp = 0; 
+            }
         }
         Debug.Log(currentXp);
         OnXPUpdated?.Invoke(currentXp);
         CheckIfEnoughXp();
+        CheckIfZeroXp();
     }
 
     private void CheckIfEnoughXp()
@@ -77,10 +85,34 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void CheckIfZeroXp()
+    {
+        if (currentXp == 0)
+        {
+            
+            Debug.Log("You received a DEMOTION!! Go to previous level");
+            if (!levelManager.LoadPreviousLevel())
+            {
+                //Trigger game over screen
+                if (gameOver != null)
+                {
+                    gameOver.GetComponent<Tween_Scale>().TriggerScale();
+                    gameOver.GetComponent<GameOver>().gameOverBackground.SetActive(true);
+                    GameObject.Find("Player").GetComponent<PlayerControls>().DisablePlayerMovement(true, true);
+                    
+                }
+                else
+                {
+                    Debug.Log("Assign game over screen in Game Manager!!");
+                }
+            }
+        }
+    }
+
     private void ResetVariables(Level currentLevel)
     {
         //Debug.Log(currentLevel.sceneName + " loaded, new threshold = " + currentLevel.xpThreshold);
-        currentXp = 0;
+        currentXp = 5;
         xpRequiredToGoNextLevel = currentLevel.xpThreshold;
     }
 }

@@ -158,10 +158,10 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    public void DisablePlayerMovement(bool isTransition, bool openingMinigame)
+    public void DisablePlayerMovement(bool disablePause, bool pauseCountdowns)
     {
         //Don't pause timers if opening minigame
-        if (!openingMinigame)
+        if (!pauseCountdowns)
         {
             //pause timers
             OnPause?.Invoke();
@@ -170,7 +170,7 @@ public class PlayerControls : MonoBehaviour
         m_inputs.Player.Interact.Disable();
 
         //Stop player from opening pause menu during transition
-        if (isTransition)
+        if (disablePause)
         {
             m_inputs.Player.PauseMenu.Disable();
         }
