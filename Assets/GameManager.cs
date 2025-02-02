@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public int currentXp;
     public GameObject gameOver;
+    public GameObject winPopup;
 
     public int XPRequiredToGoNextLevel => xpRequiredToGoNextLevel;
 
@@ -84,7 +85,13 @@ public class GameManager : MonoBehaviour
         {
             //Trigger some kind of promotion transition/cutscene here
             Debug.Log("You received a PROMOTION!! Go to next level");
-            levelManager.LoadNextLevel();
+            if (!levelManager.LoadNextLevel())
+            {
+                //Last level - trigger win screen
+                winPopup.GetComponent<Tween_Scale>().TriggerScale();
+                winPopup.GetComponent<GameOver>().gameOverBackground.SetActive(true);
+                GameObject.Find("Player").GetComponent<PlayerControls>().DisablePlayerMovement(true, true);
+            }
         }
     }
 
