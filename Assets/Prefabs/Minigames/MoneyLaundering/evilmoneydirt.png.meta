@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      evilmoneydirt_0: -6907078004047709096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

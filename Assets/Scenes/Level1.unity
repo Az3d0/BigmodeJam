@@ -2226,10 +2226,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 840670489354576300, guid: 6383644b4ca6bed4cb1fe7b6a962be5b, type: 3}
-      propertyPath: m_LinearDamping
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 1980013789518652015, guid: 6383644b4ca6bed4cb1fe7b6a962be5b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.422529
