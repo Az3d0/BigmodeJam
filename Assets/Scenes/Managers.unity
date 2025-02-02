@@ -964,7 +964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelList: {fileID: 11400000, guid: a30bc7b09465e54459605ed2deffdc00, type: 2}
   currentLevelIndex: 0
-  currentLevelName: Level1
+  currentLevelName: MainMenu
 --- !u!4 &1243031058
 Transform:
   m_ObjectHideFlags: 0
