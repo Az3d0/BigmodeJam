@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class VomitPuddle : MonoBehaviour
@@ -6,6 +7,7 @@ public class VomitPuddle : MonoBehaviour
     [SerializeField] private SpriteRenderer vomit;
 
     public event Action OnCleaned;
+    [SerializeField] private List<AudioSource> m_SFX = new List<AudioSource>();
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -19,6 +21,15 @@ public class VomitPuddle : MonoBehaviour
                 OnCleaned?.Invoke();
                 Destroy(gameObject);
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Mop" && Input.mousePositionDelta != Vector3.zero)
+        {
+            int random = UnityEngine.Random.Range(0, m_SFX.Count);
+            m_SFX[random].Play();
         }
     }
 }

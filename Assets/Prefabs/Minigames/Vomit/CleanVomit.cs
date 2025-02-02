@@ -13,13 +13,11 @@ public class CleanVomit : PointNClickMinigame
 
     protected override void Awake()
     {
-        OnObjectHit += SetDragableObject;
         base.Awake();
     }
 
     protected override void OnDestroy()
     {
-        OnObjectHit -= SetDragableObject;
         base.OnDestroy();
     }
     public override void Start()

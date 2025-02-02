@@ -58,8 +58,8 @@ Transform:
   m_GameObject: {fileID: 1259963900411709676}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.241, z: 0}
-  m_LocalScale: {x: 0.50503, y: 0.50503, z: 0.50503}
+  m_LocalPosition: {x: -0.02, y: -0.008, z: 0}
+  m_LocalScale: {x: 0.6255301, y: 0.6255301, z: 0.6255301}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7269336371035096383}
@@ -108,7 +108,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4631745886286828123, guid: eb78594782c5e3f44b8b10a9941b223b, type: 3}
+  m_Sprite: {fileID: 5522654982662980753, guid: 78e7ebefbf20602438d09b162f659e60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -377,7 +377,7 @@ Transform:
   m_GameObject: {fileID: 4682828023834220449}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1.7778, y: 1.7778, z: 1.7778}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -482,6 +482,26 @@ PrefabInstance:
     - target: {fileID: 1548466732400130749, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
       propertyPath: m_Name
       value: LifetimeTimer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248543397705139739, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1171.098
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248543397705139739, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1171.098
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248543397705139739, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1171.098
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248543397705139739, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -51
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248543397705139739, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -896
       objectReference: {fileID: 0}
     - target: {fileID: 7527395644808378148, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
       propertyPath: m_Pivot.x
