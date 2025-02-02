@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      small chair_0: -8424107434678758875
+      small chair_1: -780267717249108756
+      small chair_2: 3175192057125306979
+      small chair_3: 568537539908221404
+      small chair_4: -1434118802448342821
+      small chair_5: -1735867377359427699
+      small chair_6: 753318980272780263
+      small chair_7: 4795060728105769757
+      small chair_8: 7130534552760099987
+      small chair_9: 2671830565454684380
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

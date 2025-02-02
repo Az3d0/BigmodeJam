@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sofa r_0: -145357870055133531
+      sofa r_1: 3020723047489738753
+      sofa r_10: 6440726497026457487
+      sofa r_11: 39477212570145529
+      sofa r_12: -4377469051204788559
+      sofa r_13: -8523479402598036821
+      sofa r_2: -2980501042394468723
+      sofa r_3: 8733468487274188251
+      sofa r_4: 2982458188218915367
+      sofa r_5: -8575891583401809553
+      sofa r_6: -8452333592192471872
+      sofa r_7: 3270999484472914926
+      sofa r_8: 3285437525529819454
+      sofa r_9: -4667180880514213687
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

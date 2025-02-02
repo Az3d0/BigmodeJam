@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      explorer icon RED_0: 3495282816538826206
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
