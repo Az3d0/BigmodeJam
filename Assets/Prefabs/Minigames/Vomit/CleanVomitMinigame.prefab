@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 208223922915619605}
   - component: {fileID: 1029882631966156016}
+  - component: {fileID: 2952243624869639465}
   m_Layer: 6
   m_Name: CleanVomitMinigame
   m_TagString: Untagged
@@ -67,6 +68,18 @@ MonoBehaviour:
   - {fileID: 1361057397231115546}
   - {fileID: 2547470767705234745}
   m_numberOfVomits: 3
+--- !u!210 &2952243624869639465
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538834746903993984}
+  m_Enabled: 1
+  m_SortingLayerID: 397302209
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1 &1361057397231115546
 GameObject:
   m_ObjectHideFlags: 0

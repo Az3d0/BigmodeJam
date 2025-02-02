@@ -44,5 +44,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: MainLevel
+    uniqueID: 607847837
+    locked: 0
+  - name: Minigame
+    uniqueID: 397302209
+    locked: 0
   m_RenderingLayers:
   - Default
