@@ -12,6 +12,10 @@ public class StartGame : MonoBehaviour
     {
         StartCoroutine(LoadSceneCoroutine(index));
     }
+    private void Awake()
+    {
+        SceneManager.LoadSceneAsync(buildIndexOfManagersScene, LoadSceneMode.Additive);
+    }
 
     private IEnumerator LoadSceneCoroutine(int index)
     {
