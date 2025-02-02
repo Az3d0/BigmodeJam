@@ -3,13 +3,10 @@ using UnityEngine;
 
 public class VomitPuddle : MonoBehaviour
 {
-    private SpriteRenderer vomit;
+    [SerializeField] private SpriteRenderer vomit;
 
     public event Action OnCleaned;
-    private void Awake()
-    {
-        vomit = GetComponent<SpriteRenderer>();
-    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Mop" && Input.mousePositionDelta != Vector3.zero)

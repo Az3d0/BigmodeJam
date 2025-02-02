@@ -5,10 +5,8 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CleanVomit : Minigame
+public class CleanVomit : PointNClickMinigame
 {
-    private InputSystem_Actions m_inputs;
-    private DragableObject m_draggedObject;
     [SerializeField] private GameObject m_vomitAsset;
     [SerializeField] private List<GameObject> m_vomitSpawnPoints = new List<GameObject>();
     private List<GameObject> m_selectedSpawnPoints = new List<GameObject>();
@@ -16,51 +14,22 @@ public class CleanVomit : Minigame
     [SerializeField] private int m_numberOfVomits = 3;
     private int m_cleanedVomits = 0;
 
-    private void Awake()
+
+    protected override void Awake()
     {
-
-        m_inputs = new InputSystem_Actions();
-        m_inputs.Minigame1.Enable();
-        m_inputs.Minigame1.Select.performed += RaycastFromMouse;
-        m_inputs.Minigame1.Select.canceled += ResetDragableObject;
-
-    }
-
-    public override void Start()
-    {
-        GenerateVomit();
-        base.Start();
-    }
-
-    private void ResetDragableObject(InputAction.CallbackContext context)
-    {
-        if(m_draggedObject != null)
-        {
-            m_draggedObject.SetIsBeingDragged(false);
-            m_draggedObject = null;
-        }
-    }
-
-    private void RaycastFromMouse(InputAction.CallbackContext context)
-    {
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-
-        if(hit.collider != null)
-        {
-            if(hit.collider.gameObject.TryGetComponent(out DragableObject dragableObject) )
-            {
-                m_draggedObject = dragableObject;
-                m_draggedObject.SetIsBeingDragged(context.ReadValueAsButton());
-            }
-        } 
+        OnObjectHit += SetDragableObject;
+        base.Awake();
     }
 
     protected override void OnDestroy()
     {
-        TriggerGameEnd();
-        m_inputs.Minigame1.Select.started -= RaycastFromMouse;
-        m_inputs.Minigame1.Select.canceled -= ResetDragableObject;
-        m_inputs.Minigame1.Disable();
+        OnObjectHit -= SetDragableObject;
+        base.OnDestroy();
+    }
+    public override void Start()
+    {
+        GenerateVomit();
+        base.Start();
     }
 
     private void GenerateVomit()
