@@ -8,7 +8,8 @@ public class Neighbourhood : ClickableObject
     public event Action OnLiesBelieved;
     [SerializeField] private GameObject m_explosion;
     [SerializeField] private List<GameObject> m_floatingTextAssets = new List<GameObject>();
-
+    [SerializeField] private List<AudioSource> m_dataSFX = new List<AudioSource>();
+    [SerializeField] private AudioSource m_boom;
     private void Start()
     {
         m_explosion.SetActive(false);
@@ -23,12 +24,16 @@ public class Neighbourhood : ClickableObject
             int random = UnityEngine.Random.Range(0, m_floatingTextAssets.Count);
             GameObject floatingtext = Instantiate(m_floatingTextAssets[random]);
             floatingtext.transform.position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, -5);
+
+            int randomSFX = UnityEngine.Random.Range(0, m_dataSFX.Count);
+            m_dataSFX[randomSFX].Play();
         }
 
         if (m_life == 0)
         {
             OnLiesBelieved?.Invoke();
 
+            m_boom.Play();
             m_explosion.SetActive(true);
             //play explosion
         }
