@@ -12,6 +12,9 @@ public class WashingMachine : MonoBehaviour
     [SerializeField] private Sprite m_machineWashingSprite;
     [SerializeField] private Sprite m_machineReadySprite;
 
+    [SerializeField] private AudioSource m_doorSlam;
+    [SerializeField] private AudioSource m_beep;
+    [SerializeField] private AudioSource m_Spin;
     private Stopwatch m_stopwatch;
     private SpriteRenderer m_machineSpriteRenderer;
     private bool m_isOpen;
@@ -64,6 +67,7 @@ public class WashingMachine : MonoBehaviour
 
     private void StartAnimation()
     {
+        m_Spin.Play();
         //add animation here 
         m_stopwatch.Start();
     }
@@ -86,7 +90,7 @@ public class WashingMachine : MonoBehaviour
     public void OpenDoor()
     {
         if (m_isOn) return;
-
+        m_doorSlam.Play();
         m_isOpen = !m_isOpen;
         if(m_isOpen)
         {
