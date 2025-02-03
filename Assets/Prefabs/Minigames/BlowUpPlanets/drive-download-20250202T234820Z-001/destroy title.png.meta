@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      destroy title_0: -6448744635168165678
+      destroy title_1: 7313432505081133741
+      destroy title_2: -6162821215984448380
+      destroy title_3: 217637645951786040
+      destroy title_4: 305601874508264547
+      destroy title_5: 367257106940655590
+      destroy title_6: -8451258031427842416
+      destroy title_7: -8300192033196481532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

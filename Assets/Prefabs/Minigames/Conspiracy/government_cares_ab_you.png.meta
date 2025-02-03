@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: b1274979682388849abf615b49e727e9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2664428925537060861
+    second: government_cares_ab_you_0
+  - first:
+      213: 6917420088473535386
+    second: government_cares_ab_you_1
+  - first:
+      213: -3417389555949409822
+    second: government_cares_ab_you_2
+  - first:
+      213: -4744790367696912844
+    second: government_cares_ab_you_3
+  - first:
+      213: -1450760643374136181
+    second: government_cares_ab_you_4
+  - first:
+      213: 340198527663854065
+    second: government_cares_ab_you_5
+  - first:
+      213: 7570596113572639774
+    second: government_cares_ab_you_6
+  - first:
+      213: -5491857073894510091
+    second: government_cares_ab_you_7
+  - first:
+      213: 6017613274239489090
+    second: government_cares_ab_you_8
+  - first:
+      213: 7215994263293087124
+    second: government_cares_ab_you_9
+  - first:
+      213: 4172991530788651540
+    second: government_cares_ab_you_10
+  - first:
+      213: 1169429050725848477
+    second: government_cares_ab_you_11
+  - first:
+      213: -4797151608536141450
+    second: government_cares_ab_you_12
+  - first:
+      213: 6455667274771734452
+    second: government_cares_ab_you_13
+  - first:
+      213: -3598750548983609986
+    second: government_cares_ab_you_14
+  - first:
+      213: -3626368822910259660
+    second: government_cares_ab_you_15
+  - first:
+      213: 7409589751095973785
+    second: government_cares_ab_you_16
+  - first:
+      213: 5778200384024190989
+    second: government_cares_ab_you_17
+  - first:
+      213: 8091681033666467864
+    second: government_cares_ab_you_18
+  - first:
+      213: -8950946135828268190
+    second: government_cares_ab_you_19
+  - first:
+      213: -1496858956576625871
+    second: government_cares_ab_you_20
+  - first:
+      213: 6733530989598826541
+    second: government_cares_ab_you_21
+  - first:
+      213: 3570429993829452279
+    second: government_cares_ab_you_22
+  - first:
+      213: -7639474631638353080
+    second: government_cares_ab_you_23
+  - first:
+      213: 1025011424450184675
+    second: government_cares_ab_you_24
+  - first:
+      213: -2482925097581041163
+    second: government_cares_ab_you_25
+  - first:
+      213: -40634146552390703
+    second: government_cares_ab_you_26
+  - first:
+      213: -6328716647915198207
+    second: government_cares_ab_you_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: government_cares_ab_you_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 1920
+        height: 1076
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308761c420c060bd0800000000000000
+      internalID: -2664428925537060861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 624
+        width: 104
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a93cd9f9bec9fff50800000000000000
+      internalID: 6917420088473535386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_2
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 627
+        width: 82
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e961821e4ef290d0800000000000000
+      internalID: -3417389555949409822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_3
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 519
+        width: 88
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43efabfac4e172eb0800000000000000
+      internalID: -4744790367696912844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_4
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 620
+        width: 89
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84419d91ecdddbe0800000000000000
+      internalID: -1450760643374136181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_5
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 619
+        width: 71
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1d38a22c0a8b400800000000000000
+      internalID: 340198527663854065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_6
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 611
+        width: 74
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e143377fd09201960800000000000000
+      internalID: 7570596113572639774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_7
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 626
+        width: 47
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f13d41a61109c3b0800000000000000
+      internalID: -5491857073894510091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_8
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 609
+        width: 75
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24458b6e36bd28350800000000000000
+      internalID: 6017613274239489090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_9
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 605
+        width: 115
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d47dcec8c542460800000000000000
+      internalID: 7215994263293087124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_10
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 605
+        width: 86
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4120f5310b179e930800000000000000
+      internalID: 4172991530788651540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_11
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 623
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9559869685aa3010800000000000000
+      internalID: 1169429050725848477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_12
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 624
+        width: 90
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671728747081d6db0800000000000000
+      internalID: -4797151608536141450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_13
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 627
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf12ecce23279950800000000000000
+      internalID: 6455667274771734452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_14
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 632
+        width: 95
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e750794517bae0ec0800000000000000
+      internalID: -3598750548983609986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_15
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 641
+        width: 64
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ee1e5d4cc8cadc0800000000000000
+      internalID: -3626368822910259660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_16
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 634
+        width: 70
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9975375fe9624d660800000000000000
+      internalID: 7409589751095973785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_17
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 616
+        width: 69
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00a9c292aa403050800000000000000
+      internalID: 5778200384024190989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_18
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 426
+        width: 100
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818947f470d6b4070800000000000000
+      internalID: 8091681033666467864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_19
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 415
+        width: 95
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26bfc42e9e9d7c380800000000000000
+      internalID: -8950946135828268190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_20
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 422
+        width: 79
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b636ea5b61a3be0800000000000000
+      internalID: -1496858956576625871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_21
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 406
+        width: 152
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d206f1f52ce427d50800000000000000
+      internalID: 6733530989598826541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_22
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 320
+        width: 105
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9ca959927bc8130800000000000000
+      internalID: 3570429993829452279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_23
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 428
+        width: 77
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b76965c422bf590800000000000000
+      internalID: -7639474631638353080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_24
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 432
+        width: 116
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e50215b572993e00800000000000000
+      internalID: 1025011424450184675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_25
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 430
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f9a7c267c0ea8dd0800000000000000
+      internalID: -2482925097581041163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_26
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 428
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db5ef08573af6ff0800000000000000
+      internalID: -40634146552390703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: government_cares_ab_you_27
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 426
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109e9ec5db1eb28a0800000000000000
+      internalID: -6328716647915198207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 54001fb9e7389374190c37a41a0ac723
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      government_cares_ab_you_0: -2664428925537060861
+      government_cares_ab_you_1: 6917420088473535386
+      government_cares_ab_you_10: 4172991530788651540
+      government_cares_ab_you_11: 1169429050725848477
+      government_cares_ab_you_12: -4797151608536141450
+      government_cares_ab_you_13: 6455667274771734452
+      government_cares_ab_you_14: -3598750548983609986
+      government_cares_ab_you_15: -3626368822910259660
+      government_cares_ab_you_16: 7409589751095973785
+      government_cares_ab_you_17: 5778200384024190989
+      government_cares_ab_you_18: 8091681033666467864
+      government_cares_ab_you_19: -8950946135828268190
+      government_cares_ab_you_2: -3417389555949409822
+      government_cares_ab_you_20: -1496858956576625871
+      government_cares_ab_you_21: 6733530989598826541
+      government_cares_ab_you_22: 3570429993829452279
+      government_cares_ab_you_23: -7639474631638353080
+      government_cares_ab_you_24: 1025011424450184675
+      government_cares_ab_you_25: -2482925097581041163
+      government_cares_ab_you_26: -40634146552390703
+      government_cares_ab_you_27: -6328716647915198207
+      government_cares_ab_you_3: -4744790367696912844
+      government_cares_ab_you_4: -1450760643374136181
+      government_cares_ab_you_5: 340198527663854065
+      government_cares_ab_you_6: 7570596113572639774
+      government_cares_ab_you_7: -5491857073894510091
+      government_cares_ab_you_8: 6017613274239489090
+      government_cares_ab_you_9: 7215994263293087124
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

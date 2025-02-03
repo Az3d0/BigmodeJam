@@ -1,3 +1,5 @@
+using TMPro;
+
 public class MinigameCountdown : Countdown
 {
     public override void Awake()
@@ -13,5 +15,10 @@ public class MinigameCountdown : Countdown
     {
         base.TimesUp();
 
+    }
+
+    public void UpdateTimerText(string text)
+    {
+        m_countdownTextUI.GetComponent<TextMeshProUGUI>().text = text;
     }
 }

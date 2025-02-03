@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 59c09381c14151f41a9be84c6fd744a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3777694546809345592
+    second: im_not_a_lizard_alien__0
+  - first:
+      213: 3750917186186946858
+    second: im_not_a_lizard_alien__1
+  - first:
+      213: 3733575958260069267
+    second: im_not_a_lizard_alien__2
+  - first:
+      213: 1359584587382205044
+    second: im_not_a_lizard_alien__3
+  - first:
+      213: 8747578135443622244
+    second: im_not_a_lizard_alien__4
+  - first:
+      213: -7090492304575805361
+    second: im_not_a_lizard_alien__5
+  - first:
+      213: -6881735570744887510
+    second: im_not_a_lizard_alien__6
+  - first:
+      213: -5834708010063354068
+    second: im_not_a_lizard_alien__7
+  - first:
+      213: -1560755578099570019
+    second: im_not_a_lizard_alien__8
+  - first:
+      213: 7351170224490661480
+    second: im_not_a_lizard_alien__9
+  - first:
+      213: -5282975888907807756
+    second: im_not_a_lizard_alien__10
+  - first:
+      213: 8983175805191869222
+    second: im_not_a_lizard_alien__11
+  - first:
+      213: -2700229858960083567
+    second: im_not_a_lizard_alien__12
+  - first:
+      213: -5700051209725888405
+    second: im_not_a_lizard_alien__13
+  - first:
+      213: -8369597596281210656
+    second: im_not_a_lizard_alien__14
+  - first:
+      213: -5182050339174761592
+    second: im_not_a_lizard_alien__15
+  - first:
+      213: -892276307686320937
+    second: im_not_a_lizard_alien__16
+  - first:
+      213: 566114722473027002
+    second: im_not_a_lizard_alien__17
+  - first:
+      213: -1527888288283957402
+    second: im_not_a_lizard_alien__18
+  - first:
+      213: -1176208264385302509
+    second: im_not_a_lizard_alien__19
+  - first:
+      213: -7464102802019506439
+    second: im_not_a_lizard_alien__20
+  - first:
+      213: -2684358791883659441
+    second: im_not_a_lizard_alien__21
+  - first:
+      213: -5961207080307180280
+    second: im_not_a_lizard_alien__22
+  - first:
+      213: 8237267575351199319
+    second: im_not_a_lizard_alien__23
+  - first:
+      213: 6035055051427146510
+    second: im_not_a_lizard_alien__24
+  - first:
+      213: -566347427112852958
+    second: im_not_a_lizard_alien__25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836508cdc211d6430800000000000000
+      internalID: 3777694546809345592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__1
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 597
+        width: 138
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29a490ce4fed0430800000000000000
+      internalID: 3750917186186946858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__2
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 587
+        width: 131
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393b70e7d8350d330800000000000000
+      internalID: 3733575958260069267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__3
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 604
+        width: 77
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a23059af63ed210800000000000000
+      internalID: 1359584587382205044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__4
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 604
+        width: 73
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4694710b7f3a56970800000000000000
+      internalID: 8747578135443622244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__5
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 612
+        width: 96
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f484e17e0d2899d90800000000000000
+      internalID: -7090492304575805361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__6
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 607
+        width: 117
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27b49b95f92f70a0800000000000000
+      internalID: -6881735570744887510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__7
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 608
+        width: 28
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c272c0c7af3f60fa0800000000000000
+      internalID: -5834708010063354068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__8
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 686
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a6a2a2215175ae0800000000000000
+      internalID: -1560755578099570019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__9
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 583
+        width: 87
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866c13afe5a940660800000000000000
+      internalID: 7351170224490661480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__10
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 614
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f352b06b691fa6b0800000000000000
+      internalID: -5282975888907807756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__11
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 596
+        width: 71
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6235857ccc6aaac70800000000000000
+      internalID: 8983175805191869222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__12
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 596
+        width: 105
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195f7ccef3bd68ad0800000000000000
+      internalID: -2700229858960083567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__13
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 606
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68b0caff9955e0b0800000000000000
+      internalID: -5700051209725888405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__14
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 370
+        width: 141
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8f1b8845739db80800000000000000
+      internalID: -8369597596281210656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__15
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 465
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88bbb451ca8a518b0800000000000000
+      internalID: -5182050339174761592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__16
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 379
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d41cd6fc6ffd93f0800000000000000
+      internalID: -892276307686320937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__17
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 356
+        width: 98
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5af17375e3bd700800000000000000
+      internalID: 566114722473027002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__18
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 342
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667ea5862b9dbcae0800000000000000
+      internalID: -1527888288283957402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__19
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 324
+        width: 204
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3107f6bb0d44dafe0800000000000000
+      internalID: -1176208264385302509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__20
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 366
+        width: 75
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f621ae4c0e2a6890800000000000000
+      internalID: -7464102802019506439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__21
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 366
+        width: 75
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47e310b6ed3fbad0800000000000000
+      internalID: -2684358791883659441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__22
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 352
+        width: 78
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d3fb98eb9854da0800000000000000
+      internalID: -5961207080307180280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__23
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 346
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756c6a48737a05270800000000000000
+      internalID: 8237267575351199319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__24
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 345
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0bed3c1892d0c350800000000000000
+      internalID: 6035055051427146510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: im_not_a_lizard_alien__25
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 339
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2226b73040ee328f0800000000000000
+      internalID: -566347427112852958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ca143f799ce798a469b22d0096c09535
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      im_not_a_lizard_alien__0: 3777694546809345592
+      im_not_a_lizard_alien__1: 3750917186186946858
+      im_not_a_lizard_alien__10: -5282975888907807756
+      im_not_a_lizard_alien__11: 8983175805191869222
+      im_not_a_lizard_alien__12: -2700229858960083567
+      im_not_a_lizard_alien__13: -5700051209725888405
+      im_not_a_lizard_alien__14: -8369597596281210656
+      im_not_a_lizard_alien__15: -5182050339174761592
+      im_not_a_lizard_alien__16: -892276307686320937
+      im_not_a_lizard_alien__17: 566114722473027002
+      im_not_a_lizard_alien__18: -1527888288283957402
+      im_not_a_lizard_alien__19: -1176208264385302509
+      im_not_a_lizard_alien__2: 3733575958260069267
+      im_not_a_lizard_alien__20: -7464102802019506439
+      im_not_a_lizard_alien__21: -2684358791883659441
+      im_not_a_lizard_alien__22: -5961207080307180280
+      im_not_a_lizard_alien__23: 8237267575351199319
+      im_not_a_lizard_alien__24: 6035055051427146510
+      im_not_a_lizard_alien__25: -566347427112852958
+      im_not_a_lizard_alien__3: 1359584587382205044
+      im_not_a_lizard_alien__4: 8747578135443622244
+      im_not_a_lizard_alien__5: -7090492304575805361
+      im_not_a_lizard_alien__6: -6881735570744887510
+      im_not_a_lizard_alien__7: -5834708010063354068
+      im_not_a_lizard_alien__8: -1560755578099570019
+      im_not_a_lizard_alien__9: 7351170224490661480
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

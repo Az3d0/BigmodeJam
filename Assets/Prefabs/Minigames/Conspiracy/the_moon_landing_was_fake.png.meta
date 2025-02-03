@@ -1,0 +1,740 @@
+fileFormatVersion: 2
+guid: e8d883e8298e43247bd062ca110be0dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1056399682290643575
+    second: the_moon_landing_was_fake_0
+  - first:
+      213: -277956181004202218
+    second: the_moon_landing_was_fake_1
+  - first:
+      213: -5798179981756793589
+    second: the_moon_landing_was_fake_2
+  - first:
+      213: -4205200888459866682
+    second: the_moon_landing_was_fake_3
+  - first:
+      213: 7192323749695095299
+    second: the_moon_landing_was_fake_4
+  - first:
+      213: 2355236374306728208
+    second: the_moon_landing_was_fake_5
+  - first:
+      213: -943079819076121008
+    second: the_moon_landing_was_fake_6
+  - first:
+      213: -422526666160304992
+    second: the_moon_landing_was_fake_7
+  - first:
+      213: -1582778425474464576
+    second: the_moon_landing_was_fake_8
+  - first:
+      213: 2508899831076524554
+    second: the_moon_landing_was_fake_9
+  - first:
+      213: -3797595680401612309
+    second: the_moon_landing_was_fake_10
+  - first:
+      213: 6184667555423351565
+    second: the_moon_landing_was_fake_11
+  - first:
+      213: 4428524717680176799
+    second: the_moon_landing_was_fake_12
+  - first:
+      213: 5696495710772107146
+    second: the_moon_landing_was_fake_13
+  - first:
+      213: -2193996327043899655
+    second: the_moon_landing_was_fake_14
+  - first:
+      213: 6113740162500909040
+    second: the_moon_landing_was_fake_15
+  - first:
+      213: 7841948183476665009
+    second: the_moon_landing_was_fake_16
+  - first:
+      213: 1079016616453033454
+    second: the_moon_landing_was_fake_17
+  - first:
+      213: 4212523740350766460
+    second: the_moon_landing_was_fake_18
+  - first:
+      213: -2729611491094414213
+    second: the_moon_landing_was_fake_19
+  - first:
+      213: -8053764272953728443
+    second: the_moon_landing_was_fake_20
+  - first:
+      213: -1990397284847473762
+    second: the_moon_landing_was_fake_21
+  - first:
+      213: -4875625139756420584
+    second: the_moon_landing_was_fake_22
+  - first:
+      213: 792791795583226409
+    second: the_moon_landing_was_fake_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d0b34061ae651f0800000000000000
+      internalID: -1056399682290643575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_1
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 620
+        width: 83
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61fce187350842cf0800000000000000
+      internalID: -277956181004202218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_2
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 625
+        width: 83
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0dfa93d60ab88fa0800000000000000
+      internalID: -5798179981756793589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_3
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 605
+        width: 145
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd4132721024a5c0800000000000000
+      internalID: -4205200888459866682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_4
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 588
+        width: 33
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3028e22085440d360800000000000000
+      internalID: 7192323749695095299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_5
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 570
+        width: 196
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019a1acf00b7fa020800000000000000
+      internalID: 2355236374306728208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_6
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 714
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ec025b6e189e2f0800000000000000
+      internalID: -943079819076121008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_7
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 593
+        width: 95
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac826b5c32e22af0800000000000000
+      internalID: -422526666160304992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_8
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 590
+        width: 91
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4417f6867d80ae0800000000000000
+      internalID: -1582778425474464576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_9
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 596
+        width: 111
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a029a588a1761d220800000000000000
+      internalID: 2508899831076524554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_10
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 578
+        width: 126
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1aa1569da3c4bc0800000000000000
+      internalID: -3797595680401612309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_11
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 597
+        width: 26
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0374e6bf5a54d550800000000000000
+      internalID: 6184667555423351565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_12
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 596
+        width: 58
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e2d5474c7457d30800000000000000
+      internalID: 4428524717680176799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_13
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 505
+        width: 103
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a879b19eaa40e0f40800000000000000
+      internalID: 5696495710772107146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_14
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 383
+        width: 147
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe590007fb5d81e0800000000000000
+      internalID: -2193996327043899655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_15
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 379
+        width: 116
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7d7ea294e58d450800000000000000
+      internalID: 6113740162500909040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_16
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 372
+        width: 91
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba752f035234dc60800000000000000
+      internalID: 7841948183476665009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_17
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 368
+        width: 99
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed4d6255ef69fe00800000000000000
+      internalID: 1079016616453033454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_18
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 345
+        width: 152
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7dd18fd504e57a30800000000000000
+      internalID: 4212523740350766460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_19
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 361
+        width: 89
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c3e7a9fc87e1ad0800000000000000
+      internalID: -2729611491094414213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_20
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 332
+        width: 94
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5426cdd70184b3090800000000000000
+      internalID: -8053764272953728443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_21
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 328
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ba3ca0730b064e0800000000000000
+      internalID: -1990397284847473762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_22
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 321
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812bade74cc465cb0800000000000000
+      internalID: -4875625139756420584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_23
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 323
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922159c00ff800b00800000000000000
+      internalID: 792791795583226409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_moon_landing_was_fake_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 847
+        width: 79
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0263ff6603df64a93913caa8827d08
+      internalID: 568108421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 46bd0609fc4bf1b4b8f3e0d495c42b94
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      the_moon_landing_was_fake_24: 568108421
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
