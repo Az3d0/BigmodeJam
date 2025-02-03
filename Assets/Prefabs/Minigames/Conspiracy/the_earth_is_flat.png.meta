@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 79d4328d03fe4f24cbc827638d9e2c6e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6408821254043323386
+    second: the_earth_is_flat_0
+  - first:
+      213: -6096204111129450131
+    second: the_earth_is_flat_1
+  - first:
+      213: 5737159500379072286
+    second: the_earth_is_flat_2
+  - first:
+      213: 3680146253659020190
+    second: the_earth_is_flat_3
+  - first:
+      213: -1086019978162447452
+    second: the_earth_is_flat_4
+  - first:
+      213: -8480674887078643485
+    second: the_earth_is_flat_5
+  - first:
+      213: 9108789656144655345
+    second: the_earth_is_flat_6
+  - first:
+      213: 6432164557015549592
+    second: the_earth_is_flat_7
+  - first:
+      213: 8699911231315730756
+    second: the_earth_is_flat_8
+  - first:
+      213: -7602947530882576355
+    second: the_earth_is_flat_9
+  - first:
+      213: -1785978476082880663
+    second: the_earth_is_flat_10
+  - first:
+      213: 2016085109748152844
+    second: the_earth_is_flat_11
+  - first:
+      213: -4385789952788110995
+    second: the_earth_is_flat_12
+  - first:
+      213: -6198335215570705342
+    second: the_earth_is_flat_13
+  - first:
+      213: -4742129474034228522
+    second: the_earth_is_flat_14
+  - first:
+      213: -5452476386921422270
+    second: the_earth_is_flat_15
+  - first:
+      213: -5499765339106568721
+    second: the_earth_is_flat_16
+  - first:
+      213: 8842346415190845154
+    second: the_earth_is_flat_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: the_earth_is_flat_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60436cb560b4f07a0800000000000000
+      internalID: -6408821254043323386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_1
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 510
+        width: 95
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d696ad5f8aee56ba0800000000000000
+      internalID: -6096204111129450131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_2
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 502
+        width: 124
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e172ad73b2c7e9f40800000000000000
+      internalID: 5737159500379072286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_3
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 535
+        width: 71
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b94daf481821330800000000000000
+      internalID: 3680146253659020190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_4
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 520
+        width: 80
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab56a6759eade0f0800000000000000
+      internalID: -1086019978162447452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_5
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 618
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8f91c6f179e4a80800000000000000
+      internalID: -8480674887078643485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_6
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 474
+        width: 109
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3314c8eebe86e70800000000000000
+      internalID: 9108789656144655345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_7
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 513
+        width: 26
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89605c5e593a34950800000000000000
+      internalID: 6432164557015549592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_8
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 518
+        width: 83
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4416108bb2b4cb870800000000000000
+      internalID: 8699911231315730756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_9
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 509
+        width: 85
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d109fc7b087ec7690800000000000000
+      internalID: -7602947530882576355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_10
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 499
+        width: 142
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f169cd90ee637e0800000000000000
+      internalID: -1785978476082880663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_11
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 519
+        width: 65
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a3e73c9b29afb10800000000000000
+      internalID: 2016085109748152844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_12
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 487
+        width: 44
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61669c564b8223c0800000000000000
+      internalID: -4385789952788110995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_13
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 503
+        width: 75
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2442d1d26f61bf9a0800000000000000
+      internalID: -6198335215570705342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_14
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 504
+        width: 95
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2a7454e52903eb0800000000000000
+      internalID: -4742129474034228522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_15
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 503
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 242e7535d99e454b0800000000000000
+      internalID: -5452476386921422270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_16
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 494
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe51c862098eca3b0800000000000000
+      internalID: -5499765339106568721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the_earth_is_flat_17
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 490
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e62662473356ba70800000000000000
+      internalID: 8842346415190845154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a9c20172195d2b6468ff5a4787248105
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      the_earth_is_flat_0: -6408821254043323386
+      the_earth_is_flat_1: -6096204111129450131
+      the_earth_is_flat_10: -1785978476082880663
+      the_earth_is_flat_11: 2016085109748152844
+      the_earth_is_flat_12: -4385789952788110995
+      the_earth_is_flat_13: -6198335215570705342
+      the_earth_is_flat_14: -4742129474034228522
+      the_earth_is_flat_15: -5452476386921422270
+      the_earth_is_flat_16: -5499765339106568721
+      the_earth_is_flat_17: 8842346415190845154
+      the_earth_is_flat_2: 5737159500379072286
+      the_earth_is_flat_3: 3680146253659020190
+      the_earth_is_flat_4: -1086019978162447452
+      the_earth_is_flat_5: -8480674887078643485
+      the_earth_is_flat_6: 9108789656144655345
+      the_earth_is_flat_7: 6432164557015549592
+      the_earth_is_flat_8: 8699911231315730756
+      the_earth_is_flat_9: -7602947530882576355
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

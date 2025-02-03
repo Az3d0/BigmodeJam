@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nebula 4_0: -8592788359280566676
+      nebula 4_1: 651320972979048785
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

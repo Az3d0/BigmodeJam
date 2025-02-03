@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alien mouthclosed_0: 4015537887844442626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

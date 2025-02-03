@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: be2b98164d8513c4da2451bace6551cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5649722918978060590
+    second: there_is_nothing_in_area_51_0
+  - first:
+      213: 6989148600405435639
+    second: there_is_nothing_in_area_51_1
+  - first:
+      213: -4706700963167615432
+    second: there_is_nothing_in_area_51_2
+  - first:
+      213: -7920341653134816701
+    second: there_is_nothing_in_area_51_3
+  - first:
+      213: -1810057468659638677
+    second: there_is_nothing_in_area_51_4
+  - first:
+      213: -7797084795018400483
+    second: there_is_nothing_in_area_51_5
+  - first:
+      213: -2907501033038810454
+    second: there_is_nothing_in_area_51_6
+  - first:
+      213: 8007470673227728631
+    second: there_is_nothing_in_area_51_7
+  - first:
+      213: -6418397730473619259
+    second: there_is_nothing_in_area_51_8
+  - first:
+      213: -7661606066223222431
+    second: there_is_nothing_in_area_51_9
+  - first:
+      213: 228722404348186550
+    second: there_is_nothing_in_area_51_10
+  - first:
+      213: 8666088758979191991
+    second: there_is_nothing_in_area_51_11
+  - first:
+      213: -8868432153854127655
+    second: there_is_nothing_in_area_51_12
+  - first:
+      213: -6187598795420124716
+    second: there_is_nothing_in_area_51_13
+  - first:
+      213: 6030310305579693502
+    second: there_is_nothing_in_area_51_14
+  - first:
+      213: -2646059715987902443
+    second: there_is_nothing_in_area_51_15
+  - first:
+      213: -1996089832594001785
+    second: there_is_nothing_in_area_51_16
+  - first:
+      213: -9024695435205444854
+    second: there_is_nothing_in_area_51_17
+  - first:
+      213: -2281907155415710960
+    second: there_is_nothing_in_area_51_18
+  - first:
+      213: -8125874166057875350
+    second: there_is_nothing_in_area_51_19
+  - first:
+      213: 4360297209130990603
+    second: there_is_nothing_in_area_51_20
+  - first:
+      213: 285891817219166751
+    second: there_is_nothing_in_area_51_21
+  - first:
+      213: -5073397841256735225
+    second: there_is_nothing_in_area_51_22
+  - first:
+      213: -8801773093900017646
+    second: there_is_nothing_in_area_51_23
+  - first:
+      213: -2300376033750599034
+    second: there_is_nothing_in_area_51_24
+  - first:
+      213: 5266883315878506406
+    second: there_is_nothing_in_area_51_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e210211bf09d76e40800000000000000
+      internalID: 5649722918978060590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_1
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 699
+        width: 70
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4a5993f917ef060800000000000000
+      internalID: 6989148600405435639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_2
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 768
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836c76249607eaeb0800000000000000
+      internalID: -4706700963167615432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_3
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 675
+        width: 83
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a4b21fa3b451290800000000000000
+      internalID: -7920341653134816701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_4
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 663
+        width: 74
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6edf75825261e6e0800000000000000
+      internalID: -1810057468659638677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_5
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 768
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d245d80b03bc390800000000000000
+      internalID: -7797084795018400483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_6
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 772
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2f3ad073b76a7d0800000000000000
+      internalID: -2907501033038810454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_7
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 687
+        width: 91
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6c813e620402f60800000000000000
+      internalID: 8007470673227728631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_8
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 669
+        width: 64
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c052ff25454de6a0800000000000000
+      internalID: -6418397730473619259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_9
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 673
+        width: 22
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16179cd20e18ca590800000000000000
+      internalID: -7661606066223222431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_10
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 651
+        width: 72
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bfc85f90d59c2300800000000000000
+      internalID: 228722404348186550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_11
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 663
+        width: 148
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4e5f6bfc1244870800000000000000
+      internalID: 8666088758979191991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_12
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 677
+        width: 21
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d15fda61fffce480800000000000000
+      internalID: -8868432153854127655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_13
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 668
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9395acdab312aa0800000000000000
+      internalID: -6187598795420124716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_14
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 571
+        width: 120
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb57471e547ffa350800000000000000
+      internalID: 6030310305579693502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_15
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 660
+        width: 25
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510f11e25be474bd0800000000000000
+      internalID: -2646059715987902443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_16
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 647
+        width: 101
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780377c7fd67c44e0800000000000000
+      internalID: -1996089832594001785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_17
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 297
+        width: 148
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b7d7a0157d1c280800000000000000
+      internalID: -9024695435205444854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_18
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 328
+        width: 71
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013460f38890550e0800000000000000
+      internalID: -2281907155415710960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_19
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 312
+        width: 99
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68c89aaf781b3f80800000000000000
+      internalID: -8125874166057875350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_20
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 312
+        width: 138
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c3169b533e28c30800000000000000
+      internalID: 4360297209130990603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_21
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 342
+        width: 146
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f121a81d711b7f300800000000000000
+      internalID: 285891817219166751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_22
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 330
+        width: 31
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e98ab1b8ba799b0800000000000000
+      internalID: -5073397841256735225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_23
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 333
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210af704102d9d580800000000000000
+      internalID: -8801773093900017646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_24
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 321
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a397a6f2c6310e0800000000000000
+      internalID: -2300376033750599034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: there_is_nothing_in_area_51_25
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 319
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afae5c787ab71940800000000000000
+      internalID: 5266883315878506406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 63a927ea468da8043b01106e0f4d3f0a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      there_is_nothing_in_area_51_0: 5649722918978060590
+      there_is_nothing_in_area_51_1: 6989148600405435639
+      there_is_nothing_in_area_51_10: 228722404348186550
+      there_is_nothing_in_area_51_11: 8666088758979191991
+      there_is_nothing_in_area_51_12: -8868432153854127655
+      there_is_nothing_in_area_51_13: -6187598795420124716
+      there_is_nothing_in_area_51_14: 6030310305579693502
+      there_is_nothing_in_area_51_15: -2646059715987902443
+      there_is_nothing_in_area_51_16: -1996089832594001785
+      there_is_nothing_in_area_51_17: -9024695435205444854
+      there_is_nothing_in_area_51_18: -2281907155415710960
+      there_is_nothing_in_area_51_19: -8125874166057875350
+      there_is_nothing_in_area_51_2: -4706700963167615432
+      there_is_nothing_in_area_51_20: 4360297209130990603
+      there_is_nothing_in_area_51_21: 285891817219166751
+      there_is_nothing_in_area_51_22: -5073397841256735225
+      there_is_nothing_in_area_51_23: -8801773093900017646
+      there_is_nothing_in_area_51_24: -2300376033750599034
+      there_is_nothing_in_area_51_25: 5266883315878506406
+      there_is_nothing_in_area_51_3: -7920341653134816701
+      there_is_nothing_in_area_51_4: -1810057468659638677
+      there_is_nothing_in_area_51_5: -7797084795018400483
+      there_is_nothing_in_area_51_6: -2907501033038810454
+      there_is_nothing_in_area_51_7: 8007470673227728631
+      there_is_nothing_in_area_51_8: -6418397730473619259
+      there_is_nothing_in_area_51_9: -7661606066223222431
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

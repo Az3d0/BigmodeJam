@@ -17,6 +17,7 @@ public abstract class Minigame : MonoBehaviour
     {
         if (m_title != null)
         {
+            m_minigameCountdown.UpdateTimerText(MinigameLenth.ToString());
             PlayTitleAnimationAndStartCountdown();
         }
         else

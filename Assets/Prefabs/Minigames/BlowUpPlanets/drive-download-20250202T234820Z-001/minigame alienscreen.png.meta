@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      minigame alienscreen_0: 6251037944185164724
+      minigame alienscreen_1: 1696339419185464624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
