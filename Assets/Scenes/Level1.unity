@@ -3573,6 +3573,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.06498197
       objectReference: {fileID: 0}
+    - target: {fileID: 7080254410325442430, guid: bd99af224f7cb3747a78840e7c4b001c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7287395773727406910, guid: bd99af224f7cb3747a78840e7c4b001c, type: 3}
       propertyPath: m_Name
       value: XP
