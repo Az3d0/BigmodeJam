@@ -144,6 +144,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -534,7 +547,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spread conspiracy title_0: 3516837458503085335
+      spread conspiracy title_1: 4451494889312053767
+      spread conspiracy title_10: -2695598165383988275
+      spread conspiracy title_11: -538017441337882894
+      spread conspiracy title_12: 2981193453006911361
+      spread conspiracy title_13: 9130728446962243088
+      spread conspiracy title_14: -2986742793833405625
+      spread conspiracy title_15: 6914475767034662641
+      spread conspiracy title_16: -3929899763551173473
+      spread conspiracy title_2: 8726743705507487631
+      spread conspiracy title_3: 4508096498030511184
+      spread conspiracy title_4: 3988906868773473443
+      spread conspiracy title_5: -1566378593670863218
+      spread conspiracy title_6: 8680458384191134558
+      spread conspiracy title_7: -1761418154521375159
+      spread conspiracy title_8: -3835859260524078138
+      spread conspiracy title_9: -543520910283549141
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

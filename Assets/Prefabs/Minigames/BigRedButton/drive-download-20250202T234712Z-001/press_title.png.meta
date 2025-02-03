@@ -1,13 +1,28 @@
 fileFormatVersion: 2
-guid: e44efd4020de9af4e8f3c92fbd3ecb4c
+guid: de0586df8599c494a850dab7897c7ba7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6251037944185164724
-    second: minigame alienscreen_0
+      213: -582299086167763394
+    second: press_title_0
   - first:
-      213: 1696339419185464624
-    second: minigame alienscreen_1
+      213: 7719844799742897246
+    second: press_title_1
+  - first:
+      213: -4717798829659246835
+    second: press_title_2
+  - first:
+      213: 4871084834916564598
+    second: press_title_3
+  - first:
+      213: -3096915662901229185
+    second: press_title_4
+  - first:
+      213: -5249536580739946260
+    second: press_title_5
+  - first:
+      213: 3991852132687431657
+    second: press_title_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,6 +102,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -116,45 +144,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: minigame alienscreen_0
+      name: press_title_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 17
-        height: 330
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b315ac04e520c650800000000000000
-      internalID: 6251037944185164724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: minigame alienscreen_1
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 56
-        width: 1329
-        height: 868
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 035ca03d6bb9a8710800000000000000
-      internalID: 1696339419185464624
+      spriteID: e369fe7f0124be7f0800000000000000
+      internalID: -582299086167763394
       vertices: []
       indices: 
       edges: []
@@ -163,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3763e827a78d4e5489ca472639e3ca4e
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +179,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      minigame alienscreen_0: 6251037944185164724
-      minigame alienscreen_1: 1696339419185464624
+      press_title_0: -582299086167763394
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
