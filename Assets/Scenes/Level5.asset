@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Level5
   m_EditorClassIdentifier: 
   sceneName: Level5
-  xpThreshold: 40
+  xpThreshold: 30
   playerSprite: {fileID: 494254431662106314, guid: 63be44142ca24ce488a20875ae79fa48, type: 3}
   employeeCardSprite: {fileID: 5317187190630154059, guid: e522ae7844a91454e9cfc228e99b23a3, type: 3}
