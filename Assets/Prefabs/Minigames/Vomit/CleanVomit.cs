@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CleanVomit : PointNClickMinigame
+public class CleanVomit : MouseMinigame
 {
     [SerializeField] private GameObject m_vomitAsset;
     [SerializeField] private List<GameObject> m_vomitSpawnPoints = new List<GameObject>();

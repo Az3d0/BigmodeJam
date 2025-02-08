@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Conspiracy : PointNClickMinigame
+public class Conspiracy : MouseMinigame
 {
     [SerializeField] private List<Neighbourhood> m_neighbourhoods = new List<Neighbourhood>();
 

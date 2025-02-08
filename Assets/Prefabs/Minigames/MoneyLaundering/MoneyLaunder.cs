@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoneyLaunder : PointNClickMinigame
+public class MoneyLaunder : MouseMinigame
 {
     [Header("washingmachine")]
     [SerializeField] private List<GameObject> m_washingMachineSpawnPoints = new List<GameObject>();

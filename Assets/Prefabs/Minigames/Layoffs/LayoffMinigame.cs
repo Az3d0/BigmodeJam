@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class LayoffMinigame : PointNClickMinigame
+public class LayoffMinigame : MouseMinigame
 {
     [Header("Layoff Stuff")]
     [SerializeField] private GameObject m_employeeAsset;

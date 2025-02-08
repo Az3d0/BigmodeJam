@@ -2,16 +2,16 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PointNClickMinigame : Minigame
+public class MouseMinigame : Minigame
 {
     protected DragableObject m_draggedObject;
 
-    [Header("Optional MouseFollower")]
-    [SerializeField] protected GameObject m_mouseFollowerAsset;
-    protected SpriteRenderer m_mouseFollowerSpriteRenderer;
-    [SerializeField] protected Sprite m_mouseFollowerSprite_Normal;
-    [SerializeField] protected Sprite m_mouseFollowerSprite_Clicked;
-    protected GameObject m_mouseFollower;
+    [Header("Optional Cursor")]
+    [SerializeField] protected GameObject m_cursorAsset;
+    protected SpriteRenderer m_cursorSpriteRenderer;
+    [SerializeField] protected Sprite m_cursorSprite_Normal;
+    [SerializeField] protected Sprite m_cursorSprite_Clicked;
+    protected GameObject m_cursor;
 
     [Header("Optional MouseFollowerSFX")]
     [SerializeField] protected AudioSource m_clickSFX;
@@ -28,16 +28,16 @@ public class PointNClickMinigame : Minigame
 
     protected virtual void FixedUpdate()
     {
-        if (m_mouseFollowerAsset == null) return;
+        if (m_cursorAsset == null) return;
         Vector3 mousePosition = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, -5);
-        m_mouseFollower.transform.localPosition = mousePosition;
+        m_cursor.transform.localPosition = mousePosition;
     }
     protected virtual void OnCLick(InputAction.CallbackContext context)
     {
         RaycastFromMouse(context);
 
-        if (m_mouseFollowerAsset == null) return;
-        m_mouseFollowerSpriteRenderer.sprite = m_mouseFollowerSprite_Clicked;
+        if (m_cursorAsset == null) return;
+        m_cursorSpriteRenderer.sprite = m_cursorSprite_Clicked;
         m_clickSFX.Play();
     }
 
@@ -45,8 +45,8 @@ public class PointNClickMinigame : Minigame
     {
         ReleaseDraggableObject(context);
 
-        if (m_mouseFollowerAsset == null) return;
-        m_mouseFollowerSpriteRenderer.sprite = m_mouseFollowerSprite_Normal;
+        if (m_cursorAsset == null) return;
+        m_cursorSpriteRenderer.sprite = m_cursorSprite_Normal;
     }
     protected override void OnDestroy()
     {
@@ -89,22 +89,22 @@ public class PointNClickMinigame : Minigame
 
     private void CreateMouseFollower()
     {
-        if (m_mouseFollowerAsset == null) return;
+        if (m_cursorAsset == null) return;
 
-        m_mouseFollower = Instantiate(m_mouseFollowerAsset);
-        if (m_mouseFollower.TryGetComponent(out SpriteRenderer spriteRenderer))
+        m_cursor = Instantiate(m_cursorAsset);
+        if (m_cursor.TryGetComponent(out SpriteRenderer spriteRenderer))
         {
-            m_mouseFollowerSpriteRenderer = spriteRenderer;
+            m_cursorSpriteRenderer = spriteRenderer;
         }
-        else if (m_mouseFollower.transform.GetChild(0).TryGetComponent(out spriteRenderer))
+        else if (m_cursor.transform.GetChild(0).TryGetComponent(out spriteRenderer))
         {
-            m_mouseFollowerSpriteRenderer = spriteRenderer;
+            m_cursorSpriteRenderer = spriteRenderer;
         }
         else
         {
             Debug.Log("No spriteRenderer attached");
         }
-        m_mouseFollower.transform.parent = transform;
-        m_mouseFollower.transform.position = gameObject.transform.position;
+        m_cursor.transform.parent = transform;
+        m_cursor.transform.position = gameObject.transform.position;
     }
 }

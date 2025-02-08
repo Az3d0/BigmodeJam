@@ -2,28 +2,32 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class Employee : ClickableObject
 {
     [SerializeField] float m_force = 50;
     private SpriteRenderer m_spriteRenderer;
     [SerializeField] Sprite m_kickedSprite;
 
+    private AudioSource m_audioSource;
+
     [Header("SFX")]
-    [SerializeField] private List<AudioSource> m_sounds = new List<AudioSource>();
+    [SerializeField] private List<AudioClip> m_audioClips = new List<AudioClip>();
+
     protected override void Awake()
     {
-        if (gameObject.TryGetComponent(out SpriteRenderer sprite))
-        {
-            m_spriteRenderer = sprite;
-        }
+        m_spriteRenderer = GetComponent<SpriteRenderer>();
+        m_audioSource = GetComponent<AudioSource>();
         base.Awake();
     }
     public override void OnClicked()
     {
-        if(m_sounds.Count > 0)
+        if(m_audioClips.Count > 0)
         {
-            int random = Random.Range(0, m_sounds.Count);
-            m_sounds[random].Play();
+            int random = Random.Range(0, m_audioClips.Count);
+            m_audioSource.clip = m_audioClips[random];
+            m_audioSource.Play();
         }
 
         m_spriteRenderer.sprite = m_kickedSprite;
