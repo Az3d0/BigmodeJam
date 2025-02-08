@@ -26,7 +26,7 @@ public class PlayerControls : MonoBehaviour
     private Animator animator;
 
     private GameObject pauseMenu;
-    private bool isPaused = false;
+    public bool isPaused = false;
 
     private void Awake()
     {

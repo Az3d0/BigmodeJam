@@ -69,9 +69,13 @@ public class TaskGenerator : MonoBehaviour
 
         while (true) // Infinite loop to keep spawning
         {
-            SpawnAtRandomSelectedSpawnpoint(RandomlySelectedTask());
-            int randomTimeInterval = UnityEngine.Random.Range(1, 5);
-            yield return new WaitForSeconds(randomTimeInterval);
+            if (!PlayerControls.Instance.isPaused)
+            {
+                SpawnAtRandomSelectedSpawnpoint(RandomlySelectedTask());
+                int randomTimeInterval = UnityEngine.Random.Range(1, 5);
+                yield return new WaitForSeconds(randomTimeInterval);
+            }
+            yield return new WaitForSeconds(2f);
         }
     }
 
