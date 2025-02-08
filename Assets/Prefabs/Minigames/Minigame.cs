@@ -2,18 +2,29 @@ using DG.Tweening;
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public abstract class Minigame : MonoBehaviour
 {
     protected InputSystem_Actions m_inputs;
     public event Action<bool> OnGameEnded;
-    [SerializeField] protected MinigameCountdown m_minigameCountdown;
     [HideInInspector] public float MinigameLenth;
+
+    protected AudioSource m_minigameMusicAudioSource;
+
+    [SerializeField] protected MinigameCountdown m_minigameCountdown;
     [SerializeField] private GameObject m_title;
+    [SerializeField] private AudioClip m_minigameMusicAudioClip;
 
     //update this in child classes depending on specific win requirements
     [HideInInspector] public bool win = false;
 
-    public virtual void Start()
+    protected virtual void Awake()
+    {
+        m_minigameMusicAudioSource = GetComponent<AudioSource>();
+        if (m_minigameMusicAudioClip) m_minigameMusicAudioSource.clip = m_minigameMusicAudioClip;
+        else Debug.LogWarning("No minigame music audioclip assigned");
+    }
+    protected virtual void Start()
     {
         if (m_title != null)
         {
@@ -24,6 +35,8 @@ public abstract class Minigame : MonoBehaviour
         {
             m_minigameCountdown.StartCountdown(MinigameLenth);
         }
+
+        m_minigameMusicAudioSource.Play();
         m_minigameCountdown.OnTimesUp += TriggerGameEnd;
     }
 

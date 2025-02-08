@@ -41,6 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4106679571575569833}
+  - component: {fileID: 3980482682331845160}
   m_Layer: 0
   m_Name: LifetimeCountdown
   m_TagString: Untagged
@@ -65,6 +66,25 @@ Transform:
   - {fileID: 8864434711043503403}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3980482682331845160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3677117473090606395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341c622d71346f7459f70259ec3562f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test:
+    m_PersistentCalls:
+      m_Calls: []
+  m_countdownBackgroundUI: {fileID: 2083515570366388434}
+  m_countdownFillUI: {fileID: 130761197237650030}
+  m_countdownTextUI: {fileID: 430643087884265392}
+  m_taskMarker: {fileID: 8910262052247249422}
 --- !u!1 &5030021930859006891
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,11 +376,27 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 639644596546585297, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
+--- !u!1 &130761197237650030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8570069898134023146, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
+  m_PrefabInstance: {fileID: 8592744631216286084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &430643087884265392 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8270434295929835060, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
+  m_PrefabInstance: {fileID: 8592744631216286084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2083515570366388434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7770307945969332566, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}
+  m_PrefabInstance: {fileID: 8592744631216286084}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2254370206554693280 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7527395644808378148, guid: f7f81b24e0ad7c34cbcb5d91ea536d1e, type: 3}

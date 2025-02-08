@@ -5,48 +5,36 @@ using UnityEngine.InputSystem;
 public class MouseMinigame : Minigame
 {
     protected DragableObject m_draggedObject;
-
     [Header("Optional Cursor")]
+    [Space(15)]
+
     [SerializeField] protected GameObject m_cursorAsset;
-    protected SpriteRenderer m_cursorSpriteRenderer;
-    [SerializeField] protected Sprite m_cursorSprite_Normal;
-    [SerializeField] protected Sprite m_cursorSprite_Clicked;
-    protected GameObject m_cursor;
+    private GameObject m_cursorGO;
+    private Cursor m_cursor;
 
-    [Header("Optional MouseFollowerSFX")]
-    [SerializeField] protected AudioSource m_clickSFX;
-    protected virtual void Awake()
+    protected override void Awake()
     {
-
+        base.Awake();
         m_inputs = new InputSystem_Actions();
         m_inputs.Minigame1.Enable();
         m_inputs.Minigame1.Select.started += OnCLick;
         m_inputs.Minigame1.Select.canceled += OnRelease;
 
-        CreateMouseFollower();
+        TryGenerateCursor();
     }
 
-    protected virtual void FixedUpdate()
-    {
-        if (m_cursorAsset == null) return;
-        Vector3 mousePosition = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, -5);
-        m_cursor.transform.localPosition = mousePosition;
-    }
     protected virtual void OnCLick(InputAction.CallbackContext context)
     {
         RaycastFromMouse(context);
 
-        if (m_cursorAsset == null) return;
-        m_cursorSpriteRenderer.sprite = m_cursorSprite_Clicked;
-        m_clickSFX.Play();
+        if(m_cursor != null) m_cursor.ClickCursor();
     }
 
     protected virtual void OnRelease(InputAction.CallbackContext context)
     {
         ReleaseDraggableObject(context);
 
-        if (m_cursorAsset == null) return;
-        m_cursorSpriteRenderer.sprite = m_cursorSprite_Normal;
+        if (m_cursor != null) m_cursor.ReleaseCursor();
     }
     protected override void OnDestroy()
     {
@@ -82,29 +70,21 @@ public class MouseMinigame : Minigame
                 if (m_draggedObject != null) return;
                 m_draggedObject = dragableObject;
                 m_draggedObject.OnGrabbed();
-
             }
         }
     }
 
-    private void CreateMouseFollower()
+    private void TryGenerateCursor()
     {
         if (m_cursorAsset == null) return;
 
-        m_cursor = Instantiate(m_cursorAsset);
-        if (m_cursor.TryGetComponent(out SpriteRenderer spriteRenderer))
+        m_cursorGO = Instantiate(m_cursorAsset);
+        if (m_cursorGO.TryGetComponent(out  Cursor cursor))
         {
-            m_cursorSpriteRenderer = spriteRenderer;
+            m_cursor = cursor;
         }
-        else if (m_cursor.transform.GetChild(0).TryGetComponent(out spriteRenderer))
-        {
-            m_cursorSpriteRenderer = spriteRenderer;
-        }
-        else
-        {
-            Debug.Log("No spriteRenderer attached");
-        }
-        m_cursor.transform.parent = transform;
-        m_cursor.transform.position = gameObject.transform.position;
+
+        m_cursorGO.transform.parent = transform;
+        m_cursorGO.transform.position = gameObject.transform.position;
     }
 }

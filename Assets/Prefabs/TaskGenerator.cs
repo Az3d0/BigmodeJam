@@ -46,7 +46,7 @@ public class TaskGenerator : MonoBehaviour
         int random = UnityEngine.Random.Range(0, unoccupiedSpawnpoints.Count);
         unoccupiedSpawnpoints[random].GetComponent<SpawnPoint>().isOccupied = true;
 
-
+        //it's important to set the task's parent to the spawnpoint, otherwise resetting the isOccupied state will not happen.
         GameObject taskAsset = Instantiate(randomTaskAsset);
         taskAsset.transform.parent = unoccupiedSpawnpoints[random].transform;
         taskAsset.transform.position = unoccupiedSpawnpoints[random].transform.position;
