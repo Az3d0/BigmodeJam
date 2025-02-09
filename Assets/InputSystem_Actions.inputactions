@@ -1041,6 +1041,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "DebugExit",
+                    "type": "Button",
+                    "id": "e642c62b-6d3d-42c1-ba02-7d355e27e8f8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1074,6 +1083,17 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "MousePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "032b882d-309f-48b2-ac9f-67df7844ae47",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "DebugExit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

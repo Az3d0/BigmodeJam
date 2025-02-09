@@ -33,10 +33,13 @@ public class Task : MonoBehaviour
     }
     private void Start()
     {
+        if (m_debugMode)
+        {
+            m_lifetimeLength = 100000;
+        }
         m_LifetimeCountdown.StartCountdown(m_lifetimeLength);
 
         //debug stuff
-        if(m_debugMode) m_LifetimeCountdown.StopCountdown();
 
         m_LifetimeCountdown.OnTimesUp += LoseMinigame;
 
@@ -87,6 +90,7 @@ public class Task : MonoBehaviour
         if (m_debugMode) 
         { 
             OpenMinigame();
+            return;
         }
 
         if (isWon)
@@ -122,10 +126,11 @@ public class Task : MonoBehaviour
 
     private void OnDestroy()
     {
-        if(transform.parent.TryGetComponent(out SpawnPoint spawnPoint))
+        if(transform.parent != null)
         {
-            spawnPoint.isOccupied = false;
+            if (transform.parent.TryGetComponent(out SpawnPoint spawnPoint)) spawnPoint.isOccupied = false;
         }
+
         m_LifetimeCountdown.OnTimesUp -= LoseMinigame;
 
     }
