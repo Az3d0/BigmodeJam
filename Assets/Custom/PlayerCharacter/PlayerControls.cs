@@ -109,7 +109,7 @@ public class PlayerControls : MonoBehaviour
     {
         DisablePlayerMovement(false, false);
         pauseMenu.GetComponent<PauseMenu>().pauseBackground.SetActive(true);
-        pauseMenu.GetComponents<Tween_Scale>()[1].TriggerScale();
+        pauseMenu.GetComponents<Tween_Scale>()[0].TriggerScale();
         isPaused = true;
     }
 
@@ -117,7 +117,7 @@ public class PlayerControls : MonoBehaviour
     {
         EnablePlayerMovement(false);
         pauseMenu.GetComponent<PauseMenu>().pauseBackground.SetActive(false);
-        pauseMenu.GetComponents<Tween_Scale>()[0].TriggerScale();
+        pauseMenu.GetComponents<Tween_Scale>()[1].TriggerScale();
         isPaused = false;
     }
 

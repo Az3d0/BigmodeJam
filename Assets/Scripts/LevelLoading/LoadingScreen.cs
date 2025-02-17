@@ -10,6 +10,7 @@ public class LoadingScreen : MonoBehaviour
     public Image playerSprite;
     PlayerControls playerControls;
     public float fadeDuration = 1f;
+    public float playerSpriteZoom = 1.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,7 +51,7 @@ public class LoadingScreen : MonoBehaviour
             playerSprite.transform.DOBlendableRotateBy(new Vector3(0, 0, -360), 1, RotateMode.FastBeyond360)
                  .SetEase(Ease.Linear)
                  .SetLoops(4, LoopType.Restart);
-            playerSprite.transform.DOScale(3f, 1.2f)
+            playerSprite.transform.DOScale(playerSpriteZoom, 1.2f)
                 .SetLoops(2, LoopType.Yoyo)
                 .SetEase(Ease.InOutSine)
                 .OnComplete(() => StartCoroutine(Deactivate()));
