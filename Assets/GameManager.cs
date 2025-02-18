@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private int xpRequiredToGoNextLevel;
     [SerializeField]
     public int currentXp;
+    public int startXp = 5;
     public GameObject gameOver;
     public GameObject winPopup;
 
@@ -122,7 +123,7 @@ public class GameManager : MonoBehaviour
     private void ResetVariables(Level currentLevel)
     {
         //Debug.Log(currentLevel.sceneName + " loaded, new threshold = " + currentLevel.xpThreshold);
-        currentXp = 5;
+        currentXp = startXp;
         xpRequiredToGoNextLevel = currentLevel.xpThreshold;
     }
 }

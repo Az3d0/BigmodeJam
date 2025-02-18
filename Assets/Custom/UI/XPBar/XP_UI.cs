@@ -40,7 +40,7 @@ public class XP_UI : MonoBehaviour
     }
     private void SetStartXp(Level level)
     {
-        m_currentXP = GameManager.Instance.currentXp;
+        m_currentXP = GameManager.Instance.startXp;
         UpdateXPBar(-1);
         Debug.Log("xp bar current xp set to: " + m_currentXP);
     }

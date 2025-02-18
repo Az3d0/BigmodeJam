@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour
     public static event Action<Level> OnLevelLoaded;
     public static event Func<IEnumerator> BeforeLevelUnloaded;
 
-    void Start()
+    void Awake()
     {
         currentLevel = levelList.levels[currentLevelIndex];
 
@@ -27,11 +27,18 @@ public class LevelManager : MonoBehaviour
             Debug.Log("LevelManager: Playing from specific level!");
             currentScene = SceneManager.GetActiveScene();
             currentLevelName = currentScene.name;
+            Debug.Log("Active level: " + currentLevelName);
             currentLevelIndex = levelList.levels.FindIndex(level => level.name.Equals(currentLevelName));
-            currentLevel = levelList.levels[currentLevelIndex];
             if (currentLevelIndex == -1)
             {
                 Debug.Log("Current level not found in level list!");
+                if (currentLevelName.Equals("Managers"))
+                {
+                    Debug.Log("If playing from editor, remove Managers scene and reload it in to make sure the Level scene is the active scene");
+                }
+            } else
+            {
+                currentLevel = levelList.levels[currentLevelIndex];
             }
             OnLevelLoaded?.Invoke(currentLevel);
         }
