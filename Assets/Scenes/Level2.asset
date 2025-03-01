@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Level2
   m_EditorClassIdentifier: 
   sceneName: Level2
+  levelName: Sad Office
   xpThreshold: 30
   playerSprite: {fileID: 9046470808292433044, guid: 5d27ee042972e534bb9c94a183024f57, type: 3}
   employeeCardSprite: {fileID: 7609013739039200940, guid: 365ba750d1b7b3843b5b73ce03f35e00, type: 3}

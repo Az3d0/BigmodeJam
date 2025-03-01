@@ -78,9 +78,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341c622d71346f7459f70259ec3562f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test:
-    m_PersistentCalls:
-      m_Calls: []
   m_countdownBackgroundUI: {fileID: 2083515570366388434}
   m_countdownFillUI: {fileID: 130761197237650030}
   m_countdownTextUI: {fileID: 430643087884265392}
@@ -145,7 +142,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &4200114894864411767
 MonoBehaviour:

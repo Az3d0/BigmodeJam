@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,8 @@ public class LoadingScreen : MonoBehaviour
     PlayerControls playerControls;
     public float fadeDuration = 1f;
     public float playerSpriteZoom = 1.5f;
+    public static event Action OnLoadingScreenDeactivated;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -90,6 +93,7 @@ public class LoadingScreen : MonoBehaviour
             {
                 playerControls.EnablePlayerMovement(true);
             }
+            OnLoadingScreenDeactivated?.Invoke();
         });
     }
 }

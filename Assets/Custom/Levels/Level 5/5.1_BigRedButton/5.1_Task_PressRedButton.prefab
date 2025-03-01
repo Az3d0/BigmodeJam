@@ -335,8 +335,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LifetimeCountdown: {fileID: 7415027935114851009}
   m_lifetimeLength: 20
-  m_minigamePrefab: {fileID: 538834746903993984, guid: 691f45a28b5bbd442a1eccba1e462869, type: 3}
-  MinigameLength: 5
+  m_minigamePrefab: {fileID: 1871690487499120693, guid: 25a5c3a47c6ef594cb6de14c6f2cee83, type: 3}
+  MinigameLength: 3
   m_debugMode: 0
 --- !u!82 &5421138919774388292
 AudioSource:

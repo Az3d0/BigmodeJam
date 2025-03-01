@@ -4,6 +4,7 @@ using UnityEngine;
 public class Level : ScriptableObject
 {
     public string sceneName;
+    public string levelName;
     public int xpThreshold;
     public Sprite playerSprite;
     public Sprite employeeCardSprite;
