@@ -296,10 +296,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoneyLaunderingMinigameVariant
       objectReference: {fileID: 0}
-    - target: {fileID: 2959872035732968922, guid: c44333953deb17d47821d5527bd31396, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4118086160674700697, guid: c44333953deb17d47821d5527bd31396, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.0397615
@@ -322,19 +318,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6218220240937483786, guid: c44333953deb17d47821d5527bd31396, type: 3}
       propertyPath: m_LocalScale.x
-      value: 13.5
+      value: 17.6
       objectReference: {fileID: 0}
     - target: {fileID: 6218220240937483786, guid: c44333953deb17d47821d5527bd31396, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8.370536
+      value: 10.912699
       objectReference: {fileID: 0}
     - target: {fileID: 6218220240937483786, guid: c44333953deb17d47821d5527bd31396, type: 3}
       propertyPath: m_LocalScale.z
-      value: 8.370536
+      value: 10.912699
       objectReference: {fileID: 0}
     - target: {fileID: 6218220240937483786, guid: c44333953deb17d47821d5527bd31396, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6795066076658068480, guid: c44333953deb17d47821d5527bd31396, type: 3}
       propertyPath: m_Sprite

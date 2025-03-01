@@ -8,6 +8,7 @@ public class LevelName : MonoBehaviour
     public TextMeshProUGUI levelName;
     public RectTransform levelNameTransform;
     public float showYPos;
+    bool isPlayableLevel = false;
 
     private void OnEnable()
     {
@@ -23,24 +24,33 @@ public class LevelName : MonoBehaviour
 
     private void UpdateLevelName(Level level)
     {
-        levelName.text = level.levelName;
+        if (level.levelName.Equals("Main Menu"))
+        {
+            isPlayableLevel = false;
+        } else
+        {
+            isPlayableLevel = true;
+            levelName.text = level.levelName;
+        }
     }
 
 
     private void DisplayLevelName()
     {
-        float screenHeight = Screen.height;
-        //Start levelname off screen
-        levelNameTransform.anchoredPosition = new Vector2 (0, screenHeight);
+        if (isPlayableLevel)
+        {
+            float screenHeight = Screen.height;
+            //Start levelname off screen
+            levelNameTransform.anchoredPosition = new Vector2 (0, screenHeight);
 
 
-        levelNameTransform.DOAnchorPosY(showYPos, 1)
-            .OnComplete(() =>
-            {
-                levelNameTransform.DOAnchorPosY(screenHeight, 1)
-                    .SetDelay(2);
-            });
-
+            levelNameTransform.DOAnchorPosY(showYPos, 1)
+                .OnComplete(() =>
+                {
+                    levelNameTransform.DOAnchorPosY(screenHeight, 1)
+                        .SetDelay(2);
+                });
+        }
     }
 
 }

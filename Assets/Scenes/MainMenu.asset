@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: MainMenu
   m_EditorClassIdentifier: 
   sceneName: MainMenu
+  levelName: Main Menu
   xpThreshold: 0
   playerSprite: {fileID: 0}
+  employeeCardSprite: {fileID: 0}
