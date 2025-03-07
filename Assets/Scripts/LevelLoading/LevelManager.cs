@@ -10,6 +10,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] public int currentLevelIndex = 0;
     [SerializeField] public string currentLevelName = "MainMenu";
     public static Level currentLevel;
+    public static LevelManager Instance;
+    public bool testMode = true;
 
     Scene currentScene;
 
@@ -18,6 +20,11 @@ public class LevelManager : MonoBehaviour
 
     void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
         currentLevel = levelList.levels[currentLevelIndex];
 
 #if UNITY_EDITOR        
